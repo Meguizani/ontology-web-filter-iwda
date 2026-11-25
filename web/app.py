@@ -1,7 +1,13 @@
 from pathlib import Path
 import json
+import os
+import sys
+import subprocess
+import threading
+import html
+from datetime import datetime
 from collections import Counter
-from flask import Flask, request, abort, render_template_string
+from flask import Flask, request, abort, render_template_string, redirect
 
 HERE = Path(__file__).resolve().parent
 PROJECT = HERE.parent
@@ -9,6 +15,115 @@ OUT = PROJECT / "data" / "output"
 ONTOLOGY = PROJECT / "data" / "ontology" / "ali_knowledge_graph_reorganized_v2.ont"
 URLS = PROJECT / "data" / "input" / "urls.txt"
 app = Flask(__name__)
+
+# Execution is deliberately disabled by default. Enable it only for local use.
+EXECUTION_ENABLED = os.environ.get("IWDA_ENABLE_EXECUTION", "0") == "1"
+JOB_LOCK = threading.Lock()
+JOB = {
+    "running": False,
+    "name": None,
+    "status": "IDLE",
+    "output": "",
+    "started_at": None,
+    "finished_at": None,
+    "return_code": None,
+}
+
+# Fixed allowlist: never accept arbitrary commands or shell input from the browser.
+OPERATIONS = {
+    "crawl": {
+        "name": "Web Crawling + Complete Analysis",
+        "description": "Run Scrapy, V4/V5 classification and semantic analysis.",
+        "command": ["-m", "scrapy", "crawl", "ontology", "-O",
+                    "data/output/classification_results_v5.json"],
+        "timeout": 1800,
+        "warning": "This operation overwrites classification_results_v5.json.",
+    },
+    "text": {
+        "name": "Text Processing",
+        "description": "Run the spaCy text-processing demonstration.",
+        "command": ["-m", "src.text_processor"],
+        "timeout": 300,
+    },
+    "matching": {
+        "name": "Ontology Matching",
+        "description": "Run ontology concept and relationship matching.",
+        "command": ["-m", "src.ontology_matcher"],
+        "timeout": 300,
+    },
+    "classification": {
+        "name": "Relevance Classification",
+        "description": "Run the classifier's demonstration tests.",
+        "command": ["-m", "src.relevance_classifier"],
+        "timeout": 300,
+    },
+    "semantic": {
+        "name": "Semantic Analysis",
+        "description": "Run semantic analysis on its demonstration document.",
+        "command": ["-m", "src.semantic_analyzer"],
+        "timeout": 300,
+    },
+    "ontology": {
+        "name": "Load Ontology",
+        "description": "Load the ontology and display its summary.",
+        "command": ["-m", "src.ontology_loader"],
+        "timeout": 300,
+    },
+    "extract": {
+        "name": "Extract Ontology Concepts",
+        "description": "Extract ontology concepts and export domain_concepts.json.",
+        "command": ["-m", "src.concept_extractor"],
+        "timeout": 300,
+    },
+}
+
+
+def run_operation(operation_id):
+    operation = OPERATIONS[operation_id]
+    try:
+        result = subprocess.run(
+            [sys.executable, *operation["command"]],
+            cwd=PROJECT,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=operation["timeout"],
+            shell=False,
+            check=False,
+        )
+        output = (result.stdout or "")
+        if result.stderr:
+            output += "\\n\\n--- STDERR ---\\n" + result.stderr
+        with JOB_LOCK:
+            JOB.update(
+                running=False,
+                status="COMPLETED" if result.returncode == 0 else "FAILED",
+                output=output[-50000:],
+                finished_at=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                return_code=result.returncode,
+            )
+    except subprocess.TimeoutExpired as error:
+        partial = error.stdout or ""
+        if isinstance(partial, bytes):
+            partial = partial.decode("utf-8", errors="replace")
+        with JOB_LOCK:
+            JOB.update(
+                running=False,
+                status="TIMEOUT",
+                output=(str(partial) + "\\n\\nOperation timed out.").strip()[-50000:],
+                finished_at=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                return_code=None,
+            )
+    except Exception as error:
+        with JOB_LOCK:
+            JOB.update(
+                running=False,
+                status="ERROR",
+                output=str(error),
+                finished_at=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                return_code=None,
+            )
 
 def read_json(path):
     try:
@@ -100,7 +215,8 @@ pre{background:#142238;color:#dbe5f2;padding:16px;border-radius:8px;white-space:
 <a class="{{'active' if active=='home' else ''}}" href="/">▦ &nbsp; Overview</a>
 <a class="{{'active' if active=='pages' else ''}}" href="/pages">▤ &nbsp; Web pages</a>
 <a class="{{'active' if active=='ontology' else ''}}" href="/ontology">◇ &nbsp; Ontology</a>
-<a class="{{'active' if active=='method' else ''}}" href="/method">ⓘ &nbsp; Methodology</a></nav>
+<a class="{{'active' if active=='method' else ''}}" href="/method">ⓘ &nbsp; Methodology</a>
+<a class="{{'active' if active=='execution' else ''}}" href="/execution">▶ &nbsp; Project Execution</a></nav>
 <footer>LOCAL DEMONSTRATION<br>Ontology-based Web analysis</footer></aside>
 <main><header class="top"><div><div class="kicker">MASTER PROJECT</div><h1>{{ heading }}</h1></div><div class="kicker">INTELLIGENT WEB DATA ANALYSIS</div></header>
 {{ body|safe }}<p class="muted" style="border-top:1px solid #e5eaf0;padding-top:20px;font-size:11px">IWDA · Academic demonstration interface</p></main></body></html>
@@ -202,6 +318,89 @@ def method():
     for n,t,desc in stages: body+=f'<div class="item"><span class="num">{n}</span><div><b>{t}</b><p class="muted">{desc}</p></div></div>'
     body+='</section><div class="notice"><b>Academic transparency:</b> the dashboard is a presentation layer. It does not itself prove that each processing stage ran successfully; inspect the JSON records and source code. The standard spaCy en_core_web_sm pipeline does not provide complete coreference resolution or full word-sense disambiguation.</div>'
     return page("Methodology","method",body,d)
+
+
+@app.route("/execution")
+def execution():
+    with JOB_LOCK:
+        job = dict(JOB)
+
+    body = """
+    <section class="hero">
+      <div class="kicker" style="color:#b7c8e4">CONTROLLED OPERATIONS</div>
+      <h2>Run project components</h2>
+      <p>Select an operation to execute a predefined project task and inspect its console output.</p>
+    </section>
+    """
+    if not EXECUTION_ENABLED:
+        body += """
+        <div class="notice"><b>Execution is disabled.</b> This is the safe default for the public deployment.
+        To enable the controls for a local demonstration, set the environment variable
+        <code>IWDA_ENABLE_EXECUTION=1</code> before starting Flask on your own computer.</div>
+        """
+    else:
+        body += '<div class="notice"><b>Local execution enabled.</b> Only predefined operations are available. Run the dashboard on your own computer, not on a public server.</div>'
+
+    body += '<section class="panel"><h3>Available operations</h3><div class="grid">'
+    for operation_id, operation in OPERATIONS.items():
+        disabled = "" if EXECUTION_ENABLED and not job["running"] else "disabled"
+        warning = operation.get("warning")
+        body += (
+            '<div class="card">'
+            f'<b>{html.escape(operation["name"])}</b>'
+            f'<p class="muted">{html.escape(operation["description"])}</p>'
+            + (f'<p class="error"><small>{html.escape(warning)}</small></p>' if warning else "")
+            + f'<form method="post" action="/execution/start/{operation_id}">'
+            f'<button type="submit" {disabled}>Run operation</button></form></div>'
+        )
+    body += '</div></section>'
+
+    status = html.escape(str(job["status"]))
+    job_name = html.escape(str(job["name"] or "No operation started"))
+    output = html.escape(str(job["output"] or "No output yet."))
+    started = html.escape(str(job["started_at"] or "—"))
+    finished = html.escape(str(job["finished_at"] or "—"))
+    return_code = html.escape(str(job["return_code"] if job["return_code"] is not None else "—"))
+    body += (
+        '<section class="panel"><div class="kicker">EXECUTION MONITOR</div>'
+        f'<h3>{job_name}</h3><p><b>Status:</b> {status} &nbsp; '
+        f'<b>Started:</b> {started} &nbsp; <b>Finished:</b> {finished} &nbsp; '
+        f'<b>Exit code:</b> {return_code}</p>'
+        f'<pre>{output}</pre>'
+        '<p><a href="/execution">Refresh status and output</a></p></section>'
+    )
+    return page("Project execution", "execution", body, data())
+
+
+@app.route("/execution/start/<operation_id>", methods=["POST"])
+def start_execution(operation_id):
+    if not EXECUTION_ENABLED:
+        abort(403)
+    if operation_id not in OPERATIONS:
+        abort(404)
+
+    with JOB_LOCK:
+        if JOB["running"]:
+            return redirect("/execution")
+        operation = OPERATIONS[operation_id]
+        JOB.update(
+            running=True,
+            name=operation["name"],
+            status="RUNNING",
+            output="Operation started. Refresh this page to see the final output.",
+            started_at=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            finished_at=None,
+            return_code=None,
+        )
+
+    thread = threading.Thread(
+        target=run_operation,
+        args=(operation_id,),
+        daemon=True,
+    )
+    thread.start()
+    return redirect("/execution")
+
 
 if __name__=="__main__":
     print("IWDA dashboard: http://127.0.0.1:5000")
