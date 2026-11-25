@@ -1,0 +1,263 @@
+{
+    "domain": "Financial Risk and Fraud Detection",
+    "core_concepts": [
+        {
+            "id": "220",
+            "name": "Financial Security",
+            "type": "core",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "24",
+            "name": "Fraud Detection",
+            "type": "core",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "74",
+            "name": "Financial Risk Assessment Task",
+            "type": "core",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "71",
+            "name": "Financial Security Task",
+            "type": "core",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "82",
+            "name": "Financial Fraud Detection Workflow",
+            "type": "core",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "217",
+            "name": "Big Data",
+            "type": "core",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "221",
+            "name": "Supervised Learning",
+            "type": "core",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "224",
+            "name": "Fraud Detection System",
+            "type": "core",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "73",
+            "name": "Credit Risk Assessment",
+            "type": "core",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "219",
+            "name": "Financial Risk",
+            "type": "core",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "222",
+            "name": "Anomaly Detection",
+            "type": "core",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "218",
+            "name": "Machine Learning",
+            "type": "core",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "223",
+            "name": "Model Explainability",
+            "type": "core",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        }
+    ],
+    "related_concepts": [
+        {
+            "id": "212",
+            "name": "Financial Risk Assessment Module",
+            "type": "related",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "119",
+            "name": "Method",
+            "type": "related",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "184",
+            "name": "Prediction Module",
+            "type": "related",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "183",
+            "name": "Data Processing Module",
+            "type": "related",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "107",
+            "name": "Apache Spark",
+            "type": "related",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "156",
+            "name": "Trained Fraud Detection Model",
+            "type": "related",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "150",
+            "name": "Fraud Prediction",
+            "type": "related",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "182",
+            "name": "Machine Learning Model",
+            "type": "related",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "11",
+            "name": "Research Dataset",
+            "type": "related",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "226",
+            "name": "Research Project",
+            "type": "related",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        },
+        {
+            "id": "159",
+            "name": "Risk Assessment Output",
+            "type": "related",
+            "namespace": "http://knova.ru/ontolis-avis#"
+        }
+    ],
+    "relations": [
+        {
+            "source": "Fraud Detection",
+            "relation": "has",
+            "target": "Research Dataset"
+        },
+        {
+            "source": "Fraud Detection",
+            "relation": "is_a",
+            "target": "Financial Security Task"
+        },
+        {
+            "source": "Credit Risk Assessment",
+            "relation": "is_a",
+            "target": "Financial Risk Assessment Task"
+        },
+        {
+            "source": "Fraud Detection",
+            "relation": "a_part_of",
+            "target": "Financial Fraud Detection Workflow"
+        },
+        {
+            "source": "Trained Fraud Detection Model",
+            "relation": "is_instance_of",
+            "target": "Machine Learning Model"
+        },
+        {
+            "source": "Fraud Detection System",
+            "relation": "has",
+            "target": "Prediction Module"
+        },
+        {
+            "source": "Fraud Detection System",
+            "relation": "has",
+            "target": "Data Processing Module"
+        },
+        {
+            "source": "Fraud Detection System",
+            "relation": "has",
+            "target": "Machine Learning Model"
+        },
+        {
+            "source": "Apache Spark",
+            "relation": "use_for",
+            "target": "Financial Risk Assessment Task"
+        },
+        {
+            "source": "Apache Spark",
+            "relation": "use_for",
+            "target": "Financial Security Task"
+        },
+        {
+            "source": "Research Project",
+            "relation": "has",
+            "target": "Fraud Detection System"
+        },
+        {
+            "source": "Research Project",
+            "relation": "has",
+            "target": "Financial Risk Assessment Module"
+        },
+        {
+            "source": "Supervised Learning",
+            "relation": "is_a",
+            "target": "Machine Learning"
+        },
+        {
+            "source": "Model Explainability",
+            "relation": "is_a",
+            "target": "Method"
+        },
+        {
+            "source": "Research Project",
+            "relation": "has",
+            "target": "Research Dataset"
+        },
+        {
+            "source": "Financial Risk Assessment Task",
+            "relation": "has",
+            "target": "Risk Assessment Output"
+        },
+        {
+            "source": "Fraud Detection",
+            "relation": "has",
+            "target": "Fraud Prediction"
+        },
+        {
+            "source": "Fraud Detection System",
+            "relation": "has",
+            "target": "Trained Fraud Detection Model"
+        },
+        {
+            "source": "Fraud Detection System",
+            "relation": "has",
+            "target": "Financial Risk Assessment Module"
+        },
+        {
+            "source": "Fraud Detection System",
+            "relation": "use_for",
+            "target": "Fraud Detection"
+        },
+        {
+            "source": "Fraud Detection System",
+            "relation": "use_for",
+            "target": "Financial Risk Assessment Task"
+        },
+        {
+            "source": "Financial Risk Assessment Module",
+            "relation": "a_part_of",
+            "target": "Fraud Detection System"
+        }
+    ]
+}

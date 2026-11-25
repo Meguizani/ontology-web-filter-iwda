@@ -1,0 +1,2603 @@
+{
+    "document_statistics": {
+        "character_count": 336,
+        "token_count": 50,
+        "sentence_count": 4,
+        "noun_chunk_count": 13,
+        "entity_count": 4,
+        "dependency_count": 46
+    },
+    "linguistic_analysis": {
+        "tokens": [
+            {
+                "text": "Financial",
+                "lemma": "financial",
+                "pos": "ADJ",
+                "tag": "JJ",
+                "dependency": "amod",
+                "head": "fraud",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "fraud",
+                "lemma": "fraud",
+                "pos": "NOUN",
+                "tag": "NN",
+                "dependency": "compound",
+                "head": "detection",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "detection",
+                "lemma": "detection",
+                "pos": "NOUN",
+                "tag": "NN",
+                "dependency": "nsubj",
+                "head": "is",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "is",
+                "lemma": "be",
+                "pos": "AUX",
+                "tag": "VBZ",
+                "dependency": "ROOT",
+                "head": "is",
+                "is_stopword": true,
+                "is_alpha": true
+            },
+            {
+                "text": "an",
+                "lemma": "an",
+                "pos": "DET",
+                "tag": "DT",
+                "dependency": "det",
+                "head": "challenge",
+                "is_stopword": true,
+                "is_alpha": true
+            },
+            {
+                "text": "important",
+                "lemma": "important",
+                "pos": "ADJ",
+                "tag": "JJ",
+                "dependency": "amod",
+                "head": "challenge",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "challenge",
+                "lemma": "challenge",
+                "pos": "NOUN",
+                "tag": "NN",
+                "dependency": "attr",
+                "head": "is",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "for",
+                "lemma": "for",
+                "pos": "ADP",
+                "tag": "IN",
+                "dependency": "prep",
+                "head": "challenge",
+                "is_stopword": true,
+                "is_alpha": true
+            },
+            {
+                "text": "financial",
+                "lemma": "financial",
+                "pos": "ADJ",
+                "tag": "JJ",
+                "dependency": "amod",
+                "head": "institutions",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "institutions",
+                "lemma": "institution",
+                "pos": "NOUN",
+                "tag": "NNS",
+                "dependency": "pobj",
+                "head": "for",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": ".",
+                "lemma": ".",
+                "pos": "PUNCT",
+                "tag": ".",
+                "dependency": "punct",
+                "head": "is",
+                "is_stopword": false,
+                "is_alpha": false
+            },
+            {
+                "text": "Machine",
+                "lemma": "machine",
+                "pos": "NOUN",
+                "tag": "NN",
+                "dependency": "compound",
+                "head": "learning",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "learning",
+                "lemma": "learning",
+                "pos": "NOUN",
+                "tag": "NN",
+                "dependency": "compound",
+                "head": "algorithms",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "algorithms",
+                "lemma": "algorithm",
+                "pos": "NOUN",
+                "tag": "NNS",
+                "dependency": "nsubjpass",
+                "head": "used",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "such",
+                "lemma": "such",
+                "pos": "ADJ",
+                "tag": "JJ",
+                "dependency": "amod",
+                "head": "as",
+                "is_stopword": true,
+                "is_alpha": true
+            },
+            {
+                "text": "as",
+                "lemma": "as",
+                "pos": "ADP",
+                "tag": "IN",
+                "dependency": "prep",
+                "head": "algorithms",
+                "is_stopword": true,
+                "is_alpha": true
+            },
+            {
+                "text": "Random",
+                "lemma": "Random",
+                "pos": "PROPN",
+                "tag": "NNP",
+                "dependency": "compound",
+                "head": "Forest",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "Forest",
+                "lemma": "Forest",
+                "pos": "PROPN",
+                "tag": "NNP",
+                "dependency": "pobj",
+                "head": "as",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "and",
+                "lemma": "and",
+                "pos": "CCONJ",
+                "tag": "CC",
+                "dependency": "cc",
+                "head": "Forest",
+                "is_stopword": true,
+                "is_alpha": true
+            },
+            {
+                "text": "XGBoost",
+                "lemma": "XGBoost",
+                "pos": "PROPN",
+                "tag": "NNP",
+                "dependency": "conj",
+                "head": "Forest",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "can",
+                "lemma": "can",
+                "pos": "AUX",
+                "tag": "MD",
+                "dependency": "aux",
+                "head": "used",
+                "is_stopword": true,
+                "is_alpha": true
+            },
+            {
+                "text": "be",
+                "lemma": "be",
+                "pos": "AUX",
+                "tag": "VB",
+                "dependency": "auxpass",
+                "head": "used",
+                "is_stopword": true,
+                "is_alpha": true
+            },
+            {
+                "text": "used",
+                "lemma": "use",
+                "pos": "VERB",
+                "tag": "VBN",
+                "dependency": "ROOT",
+                "head": "used",
+                "is_stopword": true,
+                "is_alpha": true
+            },
+            {
+                "text": "to",
+                "lemma": "to",
+                "pos": "PART",
+                "tag": "TO",
+                "dependency": "aux",
+                "head": "detect",
+                "is_stopword": true,
+                "is_alpha": true
+            },
+            {
+                "text": "detect",
+                "lemma": "detect",
+                "pos": "VERB",
+                "tag": "VB",
+                "dependency": "xcomp",
+                "head": "used",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "fraudulent",
+                "lemma": "fraudulent",
+                "pos": "ADJ",
+                "tag": "JJ",
+                "dependency": "amod",
+                "head": "transactions",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "transactions",
+                "lemma": "transaction",
+                "pos": "NOUN",
+                "tag": "NNS",
+                "dependency": "dobj",
+                "head": "detect",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": ".",
+                "lemma": ".",
+                "pos": "PUNCT",
+                "tag": ".",
+                "dependency": "punct",
+                "head": "used",
+                "is_stopword": false,
+                "is_alpha": false
+            },
+            {
+                "text": "Apache",
+                "lemma": "Apache",
+                "pos": "PROPN",
+                "tag": "NNP",
+                "dependency": "compound",
+                "head": "Spark",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "Spark",
+                "lemma": "Spark",
+                "pos": "PROPN",
+                "tag": "NNP",
+                "dependency": "nsubj",
+                "head": "supports",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "supports",
+                "lemma": "support",
+                "pos": "VERB",
+                "tag": "VBZ",
+                "dependency": "ROOT",
+                "head": "supports",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "large",
+                "lemma": "large",
+                "pos": "ADJ",
+                "tag": "JJ",
+                "dependency": "amod",
+                "head": "scale",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "-",
+                "lemma": "-",
+                "pos": "PUNCT",
+                "tag": "HYPH",
+                "dependency": "punct",
+                "head": "scale",
+                "is_stopword": false,
+                "is_alpha": false
+            },
+            {
+                "text": "scale",
+                "lemma": "scale",
+                "pos": "NOUN",
+                "tag": "NN",
+                "dependency": "compound",
+                "head": "processing",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "data",
+                "lemma": "datum",
+                "pos": "NOUN",
+                "tag": "NNS",
+                "dependency": "compound",
+                "head": "processing",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "processing",
+                "lemma": "processing",
+                "pos": "NOUN",
+                "tag": "NN",
+                "dependency": "dobj",
+                "head": "supports",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "for",
+                "lemma": "for",
+                "pos": "ADP",
+                "tag": "IN",
+                "dependency": "prep",
+                "head": "processing",
+                "is_stopword": true,
+                "is_alpha": true
+            },
+            {
+                "text": "financial",
+                "lemma": "financial",
+                "pos": "ADJ",
+                "tag": "JJ",
+                "dependency": "amod",
+                "head": "datasets",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "datasets",
+                "lemma": "dataset",
+                "pos": "NOUN",
+                "tag": "NNS",
+                "dependency": "pobj",
+                "head": "for",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": ".",
+                "lemma": ".",
+                "pos": "PUNCT",
+                "tag": ".",
+                "dependency": "punct",
+                "head": "supports",
+                "is_stopword": false,
+                "is_alpha": false
+            },
+            {
+                "text": "SHAP",
+                "lemma": "shap",
+                "pos": "NOUN",
+                "tag": "NN",
+                "dependency": "nsubj",
+                "head": "helps",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "helps",
+                "lemma": "help",
+                "pos": "VERB",
+                "tag": "VBZ",
+                "dependency": "ROOT",
+                "head": "helps",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "explain",
+                "lemma": "explain",
+                "pos": "VERB",
+                "tag": "VB",
+                "dependency": "xcomp",
+                "head": "helps",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "predictions",
+                "lemma": "prediction",
+                "pos": "NOUN",
+                "tag": "NNS",
+                "dependency": "dobj",
+                "head": "explain",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "made",
+                "lemma": "make",
+                "pos": "VERB",
+                "tag": "VBN",
+                "dependency": "acl",
+                "head": "predictions",
+                "is_stopword": true,
+                "is_alpha": true
+            },
+            {
+                "text": "by",
+                "lemma": "by",
+                "pos": "ADP",
+                "tag": "IN",
+                "dependency": "agent",
+                "head": "made",
+                "is_stopword": true,
+                "is_alpha": true
+            },
+            {
+                "text": "machine",
+                "lemma": "machine",
+                "pos": "NOUN",
+                "tag": "NN",
+                "dependency": "compound",
+                "head": "models",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "learning",
+                "lemma": "learning",
+                "pos": "NOUN",
+                "tag": "NN",
+                "dependency": "compound",
+                "head": "models",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": "models",
+                "lemma": "model",
+                "pos": "NOUN",
+                "tag": "NNS",
+                "dependency": "pobj",
+                "head": "by",
+                "is_stopword": false,
+                "is_alpha": true
+            },
+            {
+                "text": ".",
+                "lemma": ".",
+                "pos": "PUNCT",
+                "tag": ".",
+                "dependency": "punct",
+                "head": "helps",
+                "is_stopword": false,
+                "is_alpha": false
+            }
+        ],
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "text": "Financial fraud detection is an important challenge\n for financial institutions."
+            },
+            {
+                "sentence_id": 2,
+                "text": "Machine learning algorithms such as Random Forest\n and XGBoost can be used to detect fraudulent transactions."
+            },
+            {
+                "sentence_id": 3,
+                "text": "Apache Spark supports large-scale data processing\n for financial datasets."
+            },
+            {
+                "sentence_id": 4,
+                "text": "SHAP helps explain predictions made by machine\n learning models."
+            }
+        ],
+        "noun_chunks": [
+            {
+                "text": "Financial fraud detection",
+                "root": "detection",
+                "root_lemma": "detection",
+                "root_pos": "NOUN",
+                "dependency": "nsubj"
+            },
+            {
+                "text": "an important challenge",
+                "root": "challenge",
+                "root_lemma": "challenge",
+                "root_pos": "NOUN",
+                "dependency": "attr"
+            },
+            {
+                "text": "financial institutions",
+                "root": "institutions",
+                "root_lemma": "institution",
+                "root_pos": "NOUN",
+                "dependency": "pobj"
+            },
+            {
+                "text": "Machine learning algorithms",
+                "root": "algorithms",
+                "root_lemma": "algorithm",
+                "root_pos": "NOUN",
+                "dependency": "nsubjpass"
+            },
+            {
+                "text": "Random Forest",
+                "root": "Forest",
+                "root_lemma": "Forest",
+                "root_pos": "PROPN",
+                "dependency": "pobj"
+            },
+            {
+                "text": "XGBoost",
+                "root": "XGBoost",
+                "root_lemma": "XGBoost",
+                "root_pos": "PROPN",
+                "dependency": "conj"
+            },
+            {
+                "text": "fraudulent transactions",
+                "root": "transactions",
+                "root_lemma": "transaction",
+                "root_pos": "NOUN",
+                "dependency": "dobj"
+            },
+            {
+                "text": "Apache Spark",
+                "root": "Spark",
+                "root_lemma": "Spark",
+                "root_pos": "PROPN",
+                "dependency": "nsubj"
+            },
+            {
+                "text": "large-scale data processing",
+                "root": "processing",
+                "root_lemma": "processing",
+                "root_pos": "NOUN",
+                "dependency": "dobj"
+            },
+            {
+                "text": "financial datasets",
+                "root": "datasets",
+                "root_lemma": "dataset",
+                "root_pos": "NOUN",
+                "dependency": "pobj"
+            },
+            {
+                "text": "SHAP",
+                "root": "SHAP",
+                "root_lemma": "shap",
+                "root_pos": "NOUN",
+                "dependency": "nsubj"
+            },
+            {
+                "text": "predictions",
+                "root": "predictions",
+                "root_lemma": "prediction",
+                "root_pos": "NOUN",
+                "dependency": "dobj"
+            },
+            {
+                "text": "machine\n learning models",
+                "root": "models",
+                "root_lemma": "model",
+                "root_pos": "NOUN",
+                "dependency": "pobj"
+            }
+        ],
+        "named_entities": [
+            {
+                "text": "Random Forest\n ",
+                "label": "ORG",
+                "description": "Companies, agencies, institutions, etc."
+            },
+            {
+                "text": "XGBoost",
+                "label": "ORG",
+                "description": "Companies, agencies, institutions, etc."
+            },
+            {
+                "text": "Apache Spark",
+                "label": "LOC",
+                "description": "Non-GPE locations, mountain ranges, bodies of water"
+            },
+            {
+                "text": "SHAP",
+                "label": "ORG",
+                "description": "Companies, agencies, institutions, etc."
+            }
+        ],
+        "dependency_relations": [
+            {
+                "dependent": "Financial",
+                "dependent_lemma": "financial",
+                "relation": "amod",
+                "head": "fraud",
+                "head_lemma": "fraud"
+            },
+            {
+                "dependent": "fraud",
+                "dependent_lemma": "fraud",
+                "relation": "compound",
+                "head": "detection",
+                "head_lemma": "detection"
+            },
+            {
+                "dependent": "detection",
+                "dependent_lemma": "detection",
+                "relation": "nsubj",
+                "head": "is",
+                "head_lemma": "be"
+            },
+            {
+                "dependent": "an",
+                "dependent_lemma": "an",
+                "relation": "det",
+                "head": "challenge",
+                "head_lemma": "challenge"
+            },
+            {
+                "dependent": "important",
+                "dependent_lemma": "important",
+                "relation": "amod",
+                "head": "challenge",
+                "head_lemma": "challenge"
+            },
+            {
+                "dependent": "challenge",
+                "dependent_lemma": "challenge",
+                "relation": "attr",
+                "head": "is",
+                "head_lemma": "be"
+            },
+            {
+                "dependent": "for",
+                "dependent_lemma": "for",
+                "relation": "prep",
+                "head": "challenge",
+                "head_lemma": "challenge"
+            },
+            {
+                "dependent": "financial",
+                "dependent_lemma": "financial",
+                "relation": "amod",
+                "head": "institutions",
+                "head_lemma": "institution"
+            },
+            {
+                "dependent": "institutions",
+                "dependent_lemma": "institution",
+                "relation": "pobj",
+                "head": "for",
+                "head_lemma": "for"
+            },
+            {
+                "dependent": ".",
+                "dependent_lemma": ".",
+                "relation": "punct",
+                "head": "is",
+                "head_lemma": "be"
+            },
+            {
+                "dependent": "Machine",
+                "dependent_lemma": "machine",
+                "relation": "compound",
+                "head": "learning",
+                "head_lemma": "learning"
+            },
+            {
+                "dependent": "learning",
+                "dependent_lemma": "learning",
+                "relation": "compound",
+                "head": "algorithms",
+                "head_lemma": "algorithm"
+            },
+            {
+                "dependent": "algorithms",
+                "dependent_lemma": "algorithm",
+                "relation": "nsubjpass",
+                "head": "used",
+                "head_lemma": "use"
+            },
+            {
+                "dependent": "such",
+                "dependent_lemma": "such",
+                "relation": "amod",
+                "head": "as",
+                "head_lemma": "as"
+            },
+            {
+                "dependent": "as",
+                "dependent_lemma": "as",
+                "relation": "prep",
+                "head": "algorithms",
+                "head_lemma": "algorithm"
+            },
+            {
+                "dependent": "Random",
+                "dependent_lemma": "Random",
+                "relation": "compound",
+                "head": "Forest",
+                "head_lemma": "Forest"
+            },
+            {
+                "dependent": "Forest",
+                "dependent_lemma": "Forest",
+                "relation": "pobj",
+                "head": "as",
+                "head_lemma": "as"
+            },
+            {
+                "dependent": "and",
+                "dependent_lemma": "and",
+                "relation": "cc",
+                "head": "Forest",
+                "head_lemma": "Forest"
+            },
+            {
+                "dependent": "XGBoost",
+                "dependent_lemma": "XGBoost",
+                "relation": "conj",
+                "head": "Forest",
+                "head_lemma": "Forest"
+            },
+            {
+                "dependent": "can",
+                "dependent_lemma": "can",
+                "relation": "aux",
+                "head": "used",
+                "head_lemma": "use"
+            },
+            {
+                "dependent": "be",
+                "dependent_lemma": "be",
+                "relation": "auxpass",
+                "head": "used",
+                "head_lemma": "use"
+            },
+            {
+                "dependent": "to",
+                "dependent_lemma": "to",
+                "relation": "aux",
+                "head": "detect",
+                "head_lemma": "detect"
+            },
+            {
+                "dependent": "detect",
+                "dependent_lemma": "detect",
+                "relation": "xcomp",
+                "head": "used",
+                "head_lemma": "use"
+            },
+            {
+                "dependent": "fraudulent",
+                "dependent_lemma": "fraudulent",
+                "relation": "amod",
+                "head": "transactions",
+                "head_lemma": "transaction"
+            },
+            {
+                "dependent": "transactions",
+                "dependent_lemma": "transaction",
+                "relation": "dobj",
+                "head": "detect",
+                "head_lemma": "detect"
+            },
+            {
+                "dependent": ".",
+                "dependent_lemma": ".",
+                "relation": "punct",
+                "head": "used",
+                "head_lemma": "use"
+            },
+            {
+                "dependent": "Apache",
+                "dependent_lemma": "Apache",
+                "relation": "compound",
+                "head": "Spark",
+                "head_lemma": "Spark"
+            },
+            {
+                "dependent": "Spark",
+                "dependent_lemma": "Spark",
+                "relation": "nsubj",
+                "head": "supports",
+                "head_lemma": "support"
+            },
+            {
+                "dependent": "large",
+                "dependent_lemma": "large",
+                "relation": "amod",
+                "head": "scale",
+                "head_lemma": "scale"
+            },
+            {
+                "dependent": "-",
+                "dependent_lemma": "-",
+                "relation": "punct",
+                "head": "scale",
+                "head_lemma": "scale"
+            },
+            {
+                "dependent": "scale",
+                "dependent_lemma": "scale",
+                "relation": "compound",
+                "head": "processing",
+                "head_lemma": "processing"
+            },
+            {
+                "dependent": "data",
+                "dependent_lemma": "datum",
+                "relation": "compound",
+                "head": "processing",
+                "head_lemma": "processing"
+            },
+            {
+                "dependent": "processing",
+                "dependent_lemma": "processing",
+                "relation": "dobj",
+                "head": "supports",
+                "head_lemma": "support"
+            },
+            {
+                "dependent": "for",
+                "dependent_lemma": "for",
+                "relation": "prep",
+                "head": "processing",
+                "head_lemma": "processing"
+            },
+            {
+                "dependent": "financial",
+                "dependent_lemma": "financial",
+                "relation": "amod",
+                "head": "datasets",
+                "head_lemma": "dataset"
+            },
+            {
+                "dependent": "datasets",
+                "dependent_lemma": "dataset",
+                "relation": "pobj",
+                "head": "for",
+                "head_lemma": "for"
+            },
+            {
+                "dependent": ".",
+                "dependent_lemma": ".",
+                "relation": "punct",
+                "head": "supports",
+                "head_lemma": "support"
+            },
+            {
+                "dependent": "SHAP",
+                "dependent_lemma": "shap",
+                "relation": "nsubj",
+                "head": "helps",
+                "head_lemma": "help"
+            },
+            {
+                "dependent": "explain",
+                "dependent_lemma": "explain",
+                "relation": "xcomp",
+                "head": "helps",
+                "head_lemma": "help"
+            },
+            {
+                "dependent": "predictions",
+                "dependent_lemma": "prediction",
+                "relation": "dobj",
+                "head": "explain",
+                "head_lemma": "explain"
+            },
+            {
+                "dependent": "made",
+                "dependent_lemma": "make",
+                "relation": "acl",
+                "head": "predictions",
+                "head_lemma": "prediction"
+            },
+            {
+                "dependent": "by",
+                "dependent_lemma": "by",
+                "relation": "agent",
+                "head": "made",
+                "head_lemma": "make"
+            },
+            {
+                "dependent": "machine",
+                "dependent_lemma": "machine",
+                "relation": "compound",
+                "head": "models",
+                "head_lemma": "model"
+            },
+            {
+                "dependent": "learning",
+                "dependent_lemma": "learning",
+                "relation": "compound",
+                "head": "models",
+                "head_lemma": "model"
+            },
+            {
+                "dependent": "models",
+                "dependent_lemma": "model",
+                "relation": "pobj",
+                "head": "by",
+                "head_lemma": "by"
+            },
+            {
+                "dependent": ".",
+                "dependent_lemma": ".",
+                "relation": "punct",
+                "head": "helps",
+                "head_lemma": "help"
+            }
+        ]
+    },
+    "ontology_analysis": {
+        "detected_concepts": [
+            {
+                "id": "24",
+                "name": "Fraud Detection",
+                "categories": [
+                    "fraud"
+                ],
+                "evidence": [
+                    "Fraud Detection",
+                    "financial fraud detection",
+                    "fraud detection"
+                ],
+                "source": "ontology"
+            },
+            {
+                "id": "218",
+                "name": "Machine Learning",
+                "categories": [
+                    "machine_learning"
+                ],
+                "evidence": [
+                    "Machine Learning",
+                    "machine learning",
+                    "machine learning algorithms"
+                ],
+                "source": "ontology"
+            },
+            {
+                "id": "94",
+                "name": "Random Forest",
+                "categories": [
+                    "algorithms"
+                ],
+                "evidence": [
+                    "Random Forest",
+                    "random forest"
+                ],
+                "source": "ontology"
+            },
+            {
+                "id": "98",
+                "name": "XGBoost",
+                "categories": [
+                    "algorithms"
+                ],
+                "evidence": [
+                    "XGBoost",
+                    "xgboost"
+                ],
+                "source": "ontology"
+            },
+            {
+                "id": "107",
+                "name": "Apache Spark",
+                "categories": [
+                    "big_data"
+                ],
+                "evidence": [
+                    "Apache Spark",
+                    "apache spark"
+                ],
+                "source": "ontology"
+            },
+            {
+                "id": "217",
+                "name": "Big Data",
+                "categories": [
+                    "big_data"
+                ],
+                "evidence": [
+                    "large-scale data processing"
+                ],
+                "source": "ontology"
+            },
+            {
+                "id": "106",
+                "name": "SHAP",
+                "categories": [
+                    "explainability"
+                ],
+                "evidence": [
+                    "SHAP",
+                    "shap"
+                ],
+                "source": "ontology"
+            }
+        ],
+        "ontology_relations": []
+    },
+    "sentence_analysis": [
+        {
+            "sentence_id": 1,
+            "sentence": "Financial fraud detection is an important challenge\n for financial institutions.",
+            "linguistic_analysis": {
+                "text": "Financial fraud detection is an important challenge\n for financial institutions.",
+                "statistics": {
+                    "character_count": 80,
+                    "token_count": 11,
+                    "sentence_count": 1,
+                    "noun_chunk_count": 3,
+                    "entity_count": 0,
+                    "dependency_count": 10
+                },
+                "sentences": [
+                    {
+                        "sentence_id": 1,
+                        "text": "Financial fraud detection is an important challenge\n for financial institutions."
+                    }
+                ],
+                "tokens": [
+                    {
+                        "text": "Financial",
+                        "lemma": "financial",
+                        "pos": "ADJ",
+                        "tag": "JJ",
+                        "dependency": "amod",
+                        "head": "fraud",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "fraud",
+                        "lemma": "fraud",
+                        "pos": "NOUN",
+                        "tag": "NN",
+                        "dependency": "compound",
+                        "head": "detection",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "detection",
+                        "lemma": "detection",
+                        "pos": "NOUN",
+                        "tag": "NN",
+                        "dependency": "nsubj",
+                        "head": "is",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "is",
+                        "lemma": "be",
+                        "pos": "AUX",
+                        "tag": "VBZ",
+                        "dependency": "ROOT",
+                        "head": "is",
+                        "is_stopword": true,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "an",
+                        "lemma": "an",
+                        "pos": "DET",
+                        "tag": "DT",
+                        "dependency": "det",
+                        "head": "challenge",
+                        "is_stopword": true,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "important",
+                        "lemma": "important",
+                        "pos": "ADJ",
+                        "tag": "JJ",
+                        "dependency": "amod",
+                        "head": "challenge",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "challenge",
+                        "lemma": "challenge",
+                        "pos": "NOUN",
+                        "tag": "NN",
+                        "dependency": "attr",
+                        "head": "is",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "for",
+                        "lemma": "for",
+                        "pos": "ADP",
+                        "tag": "IN",
+                        "dependency": "prep",
+                        "head": "challenge",
+                        "is_stopword": true,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "financial",
+                        "lemma": "financial",
+                        "pos": "ADJ",
+                        "tag": "JJ",
+                        "dependency": "amod",
+                        "head": "institutions",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "institutions",
+                        "lemma": "institution",
+                        "pos": "NOUN",
+                        "tag": "NNS",
+                        "dependency": "pobj",
+                        "head": "for",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": ".",
+                        "lemma": ".",
+                        "pos": "PUNCT",
+                        "tag": ".",
+                        "dependency": "punct",
+                        "head": "is",
+                        "is_stopword": false,
+                        "is_alpha": false
+                    }
+                ],
+                "noun_chunks": [
+                    {
+                        "text": "Financial fraud detection",
+                        "root": "detection",
+                        "root_lemma": "detection",
+                        "root_pos": "NOUN",
+                        "dependency": "nsubj"
+                    },
+                    {
+                        "text": "an important challenge",
+                        "root": "challenge",
+                        "root_lemma": "challenge",
+                        "root_pos": "NOUN",
+                        "dependency": "attr"
+                    },
+                    {
+                        "text": "financial institutions",
+                        "root": "institutions",
+                        "root_lemma": "institution",
+                        "root_pos": "NOUN",
+                        "dependency": "pobj"
+                    }
+                ],
+                "entities": [],
+                "dependencies": [
+                    {
+                        "dependent": "Financial",
+                        "dependent_lemma": "financial",
+                        "relation": "amod",
+                        "head": "fraud",
+                        "head_lemma": "fraud"
+                    },
+                    {
+                        "dependent": "fraud",
+                        "dependent_lemma": "fraud",
+                        "relation": "compound",
+                        "head": "detection",
+                        "head_lemma": "detection"
+                    },
+                    {
+                        "dependent": "detection",
+                        "dependent_lemma": "detection",
+                        "relation": "nsubj",
+                        "head": "is",
+                        "head_lemma": "be"
+                    },
+                    {
+                        "dependent": "an",
+                        "dependent_lemma": "an",
+                        "relation": "det",
+                        "head": "challenge",
+                        "head_lemma": "challenge"
+                    },
+                    {
+                        "dependent": "important",
+                        "dependent_lemma": "important",
+                        "relation": "amod",
+                        "head": "challenge",
+                        "head_lemma": "challenge"
+                    },
+                    {
+                        "dependent": "challenge",
+                        "dependent_lemma": "challenge",
+                        "relation": "attr",
+                        "head": "is",
+                        "head_lemma": "be"
+                    },
+                    {
+                        "dependent": "for",
+                        "dependent_lemma": "for",
+                        "relation": "prep",
+                        "head": "challenge",
+                        "head_lemma": "challenge"
+                    },
+                    {
+                        "dependent": "financial",
+                        "dependent_lemma": "financial",
+                        "relation": "amod",
+                        "head": "institutions",
+                        "head_lemma": "institution"
+                    },
+                    {
+                        "dependent": "institutions",
+                        "dependent_lemma": "institution",
+                        "relation": "pobj",
+                        "head": "for",
+                        "head_lemma": "for"
+                    },
+                    {
+                        "dependent": ".",
+                        "dependent_lemma": ".",
+                        "relation": "punct",
+                        "head": "is",
+                        "head_lemma": "be"
+                    }
+                ]
+            },
+            "detected_concepts": [
+                {
+                    "id": "24",
+                    "name": "Fraud Detection",
+                    "categories": [
+                        "fraud"
+                    ],
+                    "evidence": [
+                        "Fraud Detection",
+                        "financial fraud detection",
+                        "fraud detection"
+                    ],
+                    "source": "ontology"
+                }
+            ],
+            "ontology_relations": []
+        },
+        {
+            "sentence_id": 2,
+            "sentence": "Machine learning algorithms such as Random Forest\n and XGBoost can be used to detect fraudulent transactions.",
+            "linguistic_analysis": {
+                "text": "Machine learning algorithms such as Random Forest\n and XGBoost can be used to detect fraudulent transactions.",
+                "statistics": {
+                    "character_count": 109,
+                    "token_count": 17,
+                    "sentence_count": 1,
+                    "noun_chunk_count": 4,
+                    "entity_count": 2,
+                    "dependency_count": 16
+                },
+                "sentences": [
+                    {
+                        "sentence_id": 1,
+                        "text": "Machine learning algorithms such as Random Forest\n and XGBoost can be used to detect fraudulent transactions."
+                    }
+                ],
+                "tokens": [
+                    {
+                        "text": "Machine",
+                        "lemma": "machine",
+                        "pos": "NOUN",
+                        "tag": "NN",
+                        "dependency": "compound",
+                        "head": "learning",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "learning",
+                        "lemma": "learning",
+                        "pos": "NOUN",
+                        "tag": "NN",
+                        "dependency": "compound",
+                        "head": "algorithms",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "algorithms",
+                        "lemma": "algorithm",
+                        "pos": "NOUN",
+                        "tag": "NNS",
+                        "dependency": "nsubjpass",
+                        "head": "used",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "such",
+                        "lemma": "such",
+                        "pos": "ADJ",
+                        "tag": "JJ",
+                        "dependency": "amod",
+                        "head": "as",
+                        "is_stopword": true,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "as",
+                        "lemma": "as",
+                        "pos": "ADP",
+                        "tag": "IN",
+                        "dependency": "prep",
+                        "head": "algorithms",
+                        "is_stopword": true,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "Random",
+                        "lemma": "Random",
+                        "pos": "PROPN",
+                        "tag": "NNP",
+                        "dependency": "compound",
+                        "head": "Forest",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "Forest",
+                        "lemma": "Forest",
+                        "pos": "PROPN",
+                        "tag": "NNP",
+                        "dependency": "pobj",
+                        "head": "as",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "and",
+                        "lemma": "and",
+                        "pos": "CCONJ",
+                        "tag": "CC",
+                        "dependency": "cc",
+                        "head": "Forest",
+                        "is_stopword": true,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "XGBoost",
+                        "lemma": "XGBoost",
+                        "pos": "PROPN",
+                        "tag": "NNP",
+                        "dependency": "conj",
+                        "head": "Forest",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "can",
+                        "lemma": "can",
+                        "pos": "AUX",
+                        "tag": "MD",
+                        "dependency": "aux",
+                        "head": "used",
+                        "is_stopword": true,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "be",
+                        "lemma": "be",
+                        "pos": "AUX",
+                        "tag": "VB",
+                        "dependency": "auxpass",
+                        "head": "used",
+                        "is_stopword": true,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "used",
+                        "lemma": "use",
+                        "pos": "VERB",
+                        "tag": "VBN",
+                        "dependency": "ROOT",
+                        "head": "used",
+                        "is_stopword": true,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "to",
+                        "lemma": "to",
+                        "pos": "PART",
+                        "tag": "TO",
+                        "dependency": "aux",
+                        "head": "detect",
+                        "is_stopword": true,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "detect",
+                        "lemma": "detect",
+                        "pos": "VERB",
+                        "tag": "VB",
+                        "dependency": "xcomp",
+                        "head": "used",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "fraudulent",
+                        "lemma": "fraudulent",
+                        "pos": "ADJ",
+                        "tag": "JJ",
+                        "dependency": "amod",
+                        "head": "transactions",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "transactions",
+                        "lemma": "transaction",
+                        "pos": "NOUN",
+                        "tag": "NNS",
+                        "dependency": "dobj",
+                        "head": "detect",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": ".",
+                        "lemma": ".",
+                        "pos": "PUNCT",
+                        "tag": ".",
+                        "dependency": "punct",
+                        "head": "used",
+                        "is_stopword": false,
+                        "is_alpha": false
+                    }
+                ],
+                "noun_chunks": [
+                    {
+                        "text": "Machine learning algorithms",
+                        "root": "algorithms",
+                        "root_lemma": "algorithm",
+                        "root_pos": "NOUN",
+                        "dependency": "nsubjpass"
+                    },
+                    {
+                        "text": "Random Forest",
+                        "root": "Forest",
+                        "root_lemma": "Forest",
+                        "root_pos": "PROPN",
+                        "dependency": "pobj"
+                    },
+                    {
+                        "text": "XGBoost",
+                        "root": "XGBoost",
+                        "root_lemma": "XGBoost",
+                        "root_pos": "PROPN",
+                        "dependency": "conj"
+                    },
+                    {
+                        "text": "fraudulent transactions",
+                        "root": "transactions",
+                        "root_lemma": "transaction",
+                        "root_pos": "NOUN",
+                        "dependency": "dobj"
+                    }
+                ],
+                "entities": [
+                    {
+                        "text": "Random Forest\n ",
+                        "label": "ORG",
+                        "description": "Companies, agencies, institutions, etc."
+                    },
+                    {
+                        "text": "XGBoost",
+                        "label": "ORG",
+                        "description": "Companies, agencies, institutions, etc."
+                    }
+                ],
+                "dependencies": [
+                    {
+                        "dependent": "Machine",
+                        "dependent_lemma": "machine",
+                        "relation": "compound",
+                        "head": "learning",
+                        "head_lemma": "learning"
+                    },
+                    {
+                        "dependent": "learning",
+                        "dependent_lemma": "learning",
+                        "relation": "compound",
+                        "head": "algorithms",
+                        "head_lemma": "algorithm"
+                    },
+                    {
+                        "dependent": "algorithms",
+                        "dependent_lemma": "algorithm",
+                        "relation": "nsubjpass",
+                        "head": "used",
+                        "head_lemma": "use"
+                    },
+                    {
+                        "dependent": "such",
+                        "dependent_lemma": "such",
+                        "relation": "amod",
+                        "head": "as",
+                        "head_lemma": "as"
+                    },
+                    {
+                        "dependent": "as",
+                        "dependent_lemma": "as",
+                        "relation": "prep",
+                        "head": "algorithms",
+                        "head_lemma": "algorithm"
+                    },
+                    {
+                        "dependent": "Random",
+                        "dependent_lemma": "Random",
+                        "relation": "compound",
+                        "head": "Forest",
+                        "head_lemma": "Forest"
+                    },
+                    {
+                        "dependent": "Forest",
+                        "dependent_lemma": "Forest",
+                        "relation": "pobj",
+                        "head": "as",
+                        "head_lemma": "as"
+                    },
+                    {
+                        "dependent": "and",
+                        "dependent_lemma": "and",
+                        "relation": "cc",
+                        "head": "Forest",
+                        "head_lemma": "Forest"
+                    },
+                    {
+                        "dependent": "XGBoost",
+                        "dependent_lemma": "XGBoost",
+                        "relation": "conj",
+                        "head": "Forest",
+                        "head_lemma": "Forest"
+                    },
+                    {
+                        "dependent": "can",
+                        "dependent_lemma": "can",
+                        "relation": "aux",
+                        "head": "used",
+                        "head_lemma": "use"
+                    },
+                    {
+                        "dependent": "be",
+                        "dependent_lemma": "be",
+                        "relation": "auxpass",
+                        "head": "used",
+                        "head_lemma": "use"
+                    },
+                    {
+                        "dependent": "to",
+                        "dependent_lemma": "to",
+                        "relation": "aux",
+                        "head": "detect",
+                        "head_lemma": "detect"
+                    },
+                    {
+                        "dependent": "detect",
+                        "dependent_lemma": "detect",
+                        "relation": "xcomp",
+                        "head": "used",
+                        "head_lemma": "use"
+                    },
+                    {
+                        "dependent": "fraudulent",
+                        "dependent_lemma": "fraudulent",
+                        "relation": "amod",
+                        "head": "transactions",
+                        "head_lemma": "transaction"
+                    },
+                    {
+                        "dependent": "transactions",
+                        "dependent_lemma": "transaction",
+                        "relation": "dobj",
+                        "head": "detect",
+                        "head_lemma": "detect"
+                    },
+                    {
+                        "dependent": ".",
+                        "dependent_lemma": ".",
+                        "relation": "punct",
+                        "head": "used",
+                        "head_lemma": "use"
+                    }
+                ]
+            },
+            "detected_concepts": [
+                {
+                    "id": "218",
+                    "name": "Machine Learning",
+                    "categories": [
+                        "machine_learning"
+                    ],
+                    "evidence": [
+                        "Machine Learning",
+                        "machine learning",
+                        "machine learning algorithms"
+                    ],
+                    "source": "ontology"
+                },
+                {
+                    "id": "94",
+                    "name": "Random Forest",
+                    "categories": [
+                        "algorithms"
+                    ],
+                    "evidence": [
+                        "Random Forest",
+                        "random forest"
+                    ],
+                    "source": "ontology"
+                },
+                {
+                    "id": "98",
+                    "name": "XGBoost",
+                    "categories": [
+                        "algorithms"
+                    ],
+                    "evidence": [
+                        "XGBoost",
+                        "xgboost"
+                    ],
+                    "source": "ontology"
+                }
+            ],
+            "ontology_relations": []
+        },
+        {
+            "sentence_id": 3,
+            "sentence": "Apache Spark supports large-scale data processing\n for financial datasets.",
+            "linguistic_analysis": {
+                "text": "Apache Spark supports large-scale data processing\n for financial datasets.",
+                "statistics": {
+                    "character_count": 74,
+                    "token_count": 12,
+                    "sentence_count": 1,
+                    "noun_chunk_count": 3,
+                    "entity_count": 1,
+                    "dependency_count": 11
+                },
+                "sentences": [
+                    {
+                        "sentence_id": 1,
+                        "text": "Apache Spark supports large-scale data processing\n for financial datasets."
+                    }
+                ],
+                "tokens": [
+                    {
+                        "text": "Apache",
+                        "lemma": "Apache",
+                        "pos": "PROPN",
+                        "tag": "NNP",
+                        "dependency": "compound",
+                        "head": "Spark",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "Spark",
+                        "lemma": "Spark",
+                        "pos": "PROPN",
+                        "tag": "NNP",
+                        "dependency": "nsubj",
+                        "head": "supports",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "supports",
+                        "lemma": "support",
+                        "pos": "VERB",
+                        "tag": "VBZ",
+                        "dependency": "ROOT",
+                        "head": "supports",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "large",
+                        "lemma": "large",
+                        "pos": "ADJ",
+                        "tag": "JJ",
+                        "dependency": "amod",
+                        "head": "scale",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "-",
+                        "lemma": "-",
+                        "pos": "PUNCT",
+                        "tag": "HYPH",
+                        "dependency": "punct",
+                        "head": "scale",
+                        "is_stopword": false,
+                        "is_alpha": false
+                    },
+                    {
+                        "text": "scale",
+                        "lemma": "scale",
+                        "pos": "NOUN",
+                        "tag": "NN",
+                        "dependency": "compound",
+                        "head": "processing",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "data",
+                        "lemma": "datum",
+                        "pos": "NOUN",
+                        "tag": "NNS",
+                        "dependency": "compound",
+                        "head": "processing",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "processing",
+                        "lemma": "processing",
+                        "pos": "NOUN",
+                        "tag": "NN",
+                        "dependency": "dobj",
+                        "head": "supports",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "for",
+                        "lemma": "for",
+                        "pos": "ADP",
+                        "tag": "IN",
+                        "dependency": "prep",
+                        "head": "processing",
+                        "is_stopword": true,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "financial",
+                        "lemma": "financial",
+                        "pos": "ADJ",
+                        "tag": "JJ",
+                        "dependency": "amod",
+                        "head": "datasets",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "datasets",
+                        "lemma": "dataset",
+                        "pos": "NOUN",
+                        "tag": "NNS",
+                        "dependency": "pobj",
+                        "head": "for",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": ".",
+                        "lemma": ".",
+                        "pos": "PUNCT",
+                        "tag": ".",
+                        "dependency": "punct",
+                        "head": "supports",
+                        "is_stopword": false,
+                        "is_alpha": false
+                    }
+                ],
+                "noun_chunks": [
+                    {
+                        "text": "Apache Spark",
+                        "root": "Spark",
+                        "root_lemma": "Spark",
+                        "root_pos": "PROPN",
+                        "dependency": "nsubj"
+                    },
+                    {
+                        "text": "large-scale data processing",
+                        "root": "processing",
+                        "root_lemma": "processing",
+                        "root_pos": "NOUN",
+                        "dependency": "dobj"
+                    },
+                    {
+                        "text": "financial datasets",
+                        "root": "datasets",
+                        "root_lemma": "dataset",
+                        "root_pos": "NOUN",
+                        "dependency": "pobj"
+                    }
+                ],
+                "entities": [
+                    {
+                        "text": "Apache Spark",
+                        "label": "ORG",
+                        "description": "Companies, agencies, institutions, etc."
+                    }
+                ],
+                "dependencies": [
+                    {
+                        "dependent": "Apache",
+                        "dependent_lemma": "Apache",
+                        "relation": "compound",
+                        "head": "Spark",
+                        "head_lemma": "Spark"
+                    },
+                    {
+                        "dependent": "Spark",
+                        "dependent_lemma": "Spark",
+                        "relation": "nsubj",
+                        "head": "supports",
+                        "head_lemma": "support"
+                    },
+                    {
+                        "dependent": "large",
+                        "dependent_lemma": "large",
+                        "relation": "amod",
+                        "head": "scale",
+                        "head_lemma": "scale"
+                    },
+                    {
+                        "dependent": "-",
+                        "dependent_lemma": "-",
+                        "relation": "punct",
+                        "head": "scale",
+                        "head_lemma": "scale"
+                    },
+                    {
+                        "dependent": "scale",
+                        "dependent_lemma": "scale",
+                        "relation": "compound",
+                        "head": "processing",
+                        "head_lemma": "processing"
+                    },
+                    {
+                        "dependent": "data",
+                        "dependent_lemma": "datum",
+                        "relation": "compound",
+                        "head": "processing",
+                        "head_lemma": "processing"
+                    },
+                    {
+                        "dependent": "processing",
+                        "dependent_lemma": "processing",
+                        "relation": "dobj",
+                        "head": "supports",
+                        "head_lemma": "support"
+                    },
+                    {
+                        "dependent": "for",
+                        "dependent_lemma": "for",
+                        "relation": "prep",
+                        "head": "processing",
+                        "head_lemma": "processing"
+                    },
+                    {
+                        "dependent": "financial",
+                        "dependent_lemma": "financial",
+                        "relation": "amod",
+                        "head": "datasets",
+                        "head_lemma": "dataset"
+                    },
+                    {
+                        "dependent": "datasets",
+                        "dependent_lemma": "dataset",
+                        "relation": "pobj",
+                        "head": "for",
+                        "head_lemma": "for"
+                    },
+                    {
+                        "dependent": ".",
+                        "dependent_lemma": ".",
+                        "relation": "punct",
+                        "head": "supports",
+                        "head_lemma": "support"
+                    }
+                ]
+            },
+            "detected_concepts": [
+                {
+                    "id": "107",
+                    "name": "Apache Spark",
+                    "categories": [
+                        "big_data"
+                    ],
+                    "evidence": [
+                        "Apache Spark",
+                        "apache spark"
+                    ],
+                    "source": "ontology"
+                },
+                {
+                    "id": "217",
+                    "name": "Big Data",
+                    "categories": [
+                        "big_data"
+                    ],
+                    "evidence": [
+                        "large-scale data processing"
+                    ],
+                    "source": "ontology"
+                }
+            ],
+            "ontology_relations": []
+        },
+        {
+            "sentence_id": 4,
+            "sentence": "SHAP helps explain predictions made by machine\n learning models.",
+            "linguistic_analysis": {
+                "text": "SHAP helps explain predictions made by machine\n learning models.",
+                "statistics": {
+                    "character_count": 64,
+                    "token_count": 10,
+                    "sentence_count": 1,
+                    "noun_chunk_count": 3,
+                    "entity_count": 0,
+                    "dependency_count": 9
+                },
+                "sentences": [
+                    {
+                        "sentence_id": 1,
+                        "text": "SHAP helps explain predictions made by machine\n learning models."
+                    }
+                ],
+                "tokens": [
+                    {
+                        "text": "SHAP",
+                        "lemma": "shap",
+                        "pos": "NOUN",
+                        "tag": "NN",
+                        "dependency": "nsubj",
+                        "head": "helps",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "helps",
+                        "lemma": "help",
+                        "pos": "VERB",
+                        "tag": "VBZ",
+                        "dependency": "ROOT",
+                        "head": "helps",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "explain",
+                        "lemma": "explain",
+                        "pos": "VERB",
+                        "tag": "VB",
+                        "dependency": "xcomp",
+                        "head": "helps",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "predictions",
+                        "lemma": "prediction",
+                        "pos": "NOUN",
+                        "tag": "NNS",
+                        "dependency": "dobj",
+                        "head": "explain",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "made",
+                        "lemma": "make",
+                        "pos": "VERB",
+                        "tag": "VBN",
+                        "dependency": "acl",
+                        "head": "predictions",
+                        "is_stopword": true,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "by",
+                        "lemma": "by",
+                        "pos": "ADP",
+                        "tag": "IN",
+                        "dependency": "agent",
+                        "head": "made",
+                        "is_stopword": true,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "machine",
+                        "lemma": "machine",
+                        "pos": "NOUN",
+                        "tag": "NN",
+                        "dependency": "compound",
+                        "head": "models",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "learning",
+                        "lemma": "learning",
+                        "pos": "NOUN",
+                        "tag": "NN",
+                        "dependency": "compound",
+                        "head": "models",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": "models",
+                        "lemma": "model",
+                        "pos": "NOUN",
+                        "tag": "NNS",
+                        "dependency": "pobj",
+                        "head": "by",
+                        "is_stopword": false,
+                        "is_alpha": true
+                    },
+                    {
+                        "text": ".",
+                        "lemma": ".",
+                        "pos": "PUNCT",
+                        "tag": ".",
+                        "dependency": "punct",
+                        "head": "helps",
+                        "is_stopword": false,
+                        "is_alpha": false
+                    }
+                ],
+                "noun_chunks": [
+                    {
+                        "text": "SHAP",
+                        "root": "SHAP",
+                        "root_lemma": "shap",
+                        "root_pos": "NOUN",
+                        "dependency": "nsubj"
+                    },
+                    {
+                        "text": "predictions",
+                        "root": "predictions",
+                        "root_lemma": "prediction",
+                        "root_pos": "NOUN",
+                        "dependency": "dobj"
+                    },
+                    {
+                        "text": "machine\n learning models",
+                        "root": "models",
+                        "root_lemma": "model",
+                        "root_pos": "NOUN",
+                        "dependency": "pobj"
+                    }
+                ],
+                "entities": [],
+                "dependencies": [
+                    {
+                        "dependent": "SHAP",
+                        "dependent_lemma": "shap",
+                        "relation": "nsubj",
+                        "head": "helps",
+                        "head_lemma": "help"
+                    },
+                    {
+                        "dependent": "explain",
+                        "dependent_lemma": "explain",
+                        "relation": "xcomp",
+                        "head": "helps",
+                        "head_lemma": "help"
+                    },
+                    {
+                        "dependent": "predictions",
+                        "dependent_lemma": "prediction",
+                        "relation": "dobj",
+                        "head": "explain",
+                        "head_lemma": "explain"
+                    },
+                    {
+                        "dependent": "made",
+                        "dependent_lemma": "make",
+                        "relation": "acl",
+                        "head": "predictions",
+                        "head_lemma": "prediction"
+                    },
+                    {
+                        "dependent": "by",
+                        "dependent_lemma": "by",
+                        "relation": "agent",
+                        "head": "made",
+                        "head_lemma": "make"
+                    },
+                    {
+                        "dependent": "machine",
+                        "dependent_lemma": "machine",
+                        "relation": "compound",
+                        "head": "models",
+                        "head_lemma": "model"
+                    },
+                    {
+                        "dependent": "learning",
+                        "dependent_lemma": "learning",
+                        "relation": "compound",
+                        "head": "models",
+                        "head_lemma": "model"
+                    },
+                    {
+                        "dependent": "models",
+                        "dependent_lemma": "model",
+                        "relation": "pobj",
+                        "head": "by",
+                        "head_lemma": "by"
+                    },
+                    {
+                        "dependent": ".",
+                        "dependent_lemma": ".",
+                        "relation": "punct",
+                        "head": "helps",
+                        "head_lemma": "help"
+                    }
+                ]
+            },
+            "detected_concepts": [
+                {
+                    "id": "218",
+                    "name": "Machine Learning",
+                    "categories": [
+                        "machine_learning"
+                    ],
+                    "evidence": [
+                        "Machine Learning",
+                        "machine learning"
+                    ],
+                    "source": "ontology"
+                },
+                {
+                    "id": "106",
+                    "name": "SHAP",
+                    "categories": [
+                        "explainability"
+                    ],
+                    "evidence": [
+                        "SHAP",
+                        "shap"
+                    ],
+                    "source": "ontology"
+                }
+            ],
+            "ontology_relations": []
+        }
+    ],
+    "noun_chunk_matching": [
+        {
+            "noun_chunk": "Financial fraud detection",
+            "matched_concepts": [
+                {
+                    "id": "24",
+                    "name": "Fraud Detection",
+                    "categories": [
+                        "fraud"
+                    ],
+                    "evidence": [
+                        "Fraud Detection",
+                        "financial fraud detection",
+                        "fraud detection"
+                    ],
+                    "source": "ontology"
+                }
+            ]
+        },
+        {
+            "noun_chunk": "Machine learning algorithms",
+            "matched_concepts": [
+                {
+                    "id": "218",
+                    "name": "Machine Learning",
+                    "categories": [
+                        "machine_learning"
+                    ],
+                    "evidence": [
+                        "Machine Learning",
+                        "machine learning",
+                        "machine learning algorithms"
+                    ],
+                    "source": "ontology"
+                }
+            ]
+        },
+        {
+            "noun_chunk": "Random Forest",
+            "matched_concepts": [
+                {
+                    "id": "94",
+                    "name": "Random Forest",
+                    "categories": [
+                        "algorithms"
+                    ],
+                    "evidence": [
+                        "Random Forest",
+                        "random forest"
+                    ],
+                    "source": "ontology"
+                }
+            ]
+        },
+        {
+            "noun_chunk": "XGBoost",
+            "matched_concepts": [
+                {
+                    "id": "98",
+                    "name": "XGBoost",
+                    "categories": [
+                        "algorithms"
+                    ],
+                    "evidence": [
+                        "XGBoost",
+                        "xgboost"
+                    ],
+                    "source": "ontology"
+                }
+            ]
+        },
+        {
+            "noun_chunk": "Apache Spark",
+            "matched_concepts": [
+                {
+                    "id": "107",
+                    "name": "Apache Spark",
+                    "categories": [
+                        "big_data"
+                    ],
+                    "evidence": [
+                        "Apache Spark",
+                        "apache spark"
+                    ],
+                    "source": "ontology"
+                }
+            ]
+        },
+        {
+            "noun_chunk": "large-scale data processing",
+            "matched_concepts": [
+                {
+                    "id": "217",
+                    "name": "Big Data",
+                    "categories": [
+                        "big_data"
+                    ],
+                    "evidence": [
+                        "large-scale data processing"
+                    ],
+                    "source": "ontology"
+                }
+            ]
+        },
+        {
+            "noun_chunk": "SHAP",
+            "matched_concepts": [
+                {
+                    "id": "106",
+                    "name": "SHAP",
+                    "categories": [
+                        "explainability"
+                    ],
+                    "evidence": [
+                        "SHAP",
+                        "shap"
+                    ],
+                    "source": "ontology"
+                }
+            ]
+        },
+        {
+            "noun_chunk": "machine\n learning models",
+            "matched_concepts": [
+                {
+                    "id": "218",
+                    "name": "Machine Learning",
+                    "categories": [
+                        "machine_learning"
+                    ],
+                    "evidence": [
+                        "Machine Learning",
+                        "machine learning"
+                    ],
+                    "source": "ontology"
+                }
+            ]
+        }
+    ],
+    "entity_matching": [
+        {
+            "entity": "Random Forest",
+            "entity_label": "ORG",
+            "matched_concepts": [
+                {
+                    "id": "94",
+                    "name": "Random Forest",
+                    "categories": [
+                        "algorithms"
+                    ],
+                    "evidence": [
+                        "Random Forest",
+                        "random forest"
+                    ],
+                    "source": "ontology"
+                }
+            ]
+        },
+        {
+            "entity": "XGBoost",
+            "entity_label": "ORG",
+            "matched_concepts": [
+                {
+                    "id": "98",
+                    "name": "XGBoost",
+                    "categories": [
+                        "algorithms"
+                    ],
+                    "evidence": [
+                        "XGBoost",
+                        "xgboost"
+                    ],
+                    "source": "ontology"
+                }
+            ]
+        },
+        {
+            "entity": "Apache Spark",
+            "entity_label": "LOC",
+            "matched_concepts": [
+                {
+                    "id": "107",
+                    "name": "Apache Spark",
+                    "categories": [
+                        "big_data"
+                    ],
+                    "evidence": [
+                        "Apache Spark",
+                        "apache spark"
+                    ],
+                    "source": "ontology"
+                }
+            ]
+        },
+        {
+            "entity": "SHAP",
+            "entity_label": "ORG",
+            "matched_concepts": [
+                {
+                    "id": "106",
+                    "name": "SHAP",
+                    "categories": [
+                        "explainability"
+                    ],
+                    "evidence": [
+                        "SHAP",
+                        "shap"
+                    ],
+                    "source": "ontology"
+                }
+            ]
+        }
+    ],
+    "textual_cooccurrences": [
+        {
+            "sentence_id": 2,
+            "source_concept": "Machine Learning",
+            "target_concept": "Random Forest",
+            "evidence_sentence": "Machine learning algorithms such as Random Forest\n and XGBoost can be used to detect fraudulent transactions.",
+            "evidence_type": "same_sentence_cooccurrence",
+            "semantic_relation_confirmed": false
+        },
+        {
+            "sentence_id": 2,
+            "source_concept": "Machine Learning",
+            "target_concept": "XGBoost",
+            "evidence_sentence": "Machine learning algorithms such as Random Forest\n and XGBoost can be used to detect fraudulent transactions.",
+            "evidence_type": "same_sentence_cooccurrence",
+            "semantic_relation_confirmed": false
+        },
+        {
+            "sentence_id": 2,
+            "source_concept": "Random Forest",
+            "target_concept": "XGBoost",
+            "evidence_sentence": "Machine learning algorithms such as Random Forest\n and XGBoost can be used to detect fraudulent transactions.",
+            "evidence_type": "same_sentence_cooccurrence",
+            "semantic_relation_confirmed": false
+        },
+        {
+            "sentence_id": 3,
+            "source_concept": "Apache Spark",
+            "target_concept": "Big Data",
+            "evidence_sentence": "Apache Spark supports large-scale data processing\n for financial datasets.",
+            "evidence_type": "same_sentence_cooccurrence",
+            "semantic_relation_confirmed": false
+        },
+        {
+            "sentence_id": 4,
+            "source_concept": "Machine Learning",
+            "target_concept": "SHAP",
+            "evidence_sentence": "SHAP helps explain predictions made by machine\n learning models.",
+            "evidence_type": "same_sentence_cooccurrence",
+            "semantic_relation_confirmed": false
+        }
+    ],
+    "classification": {
+        "classification": "DIRECTLY_RELEVANT",
+        "relevance_level": "DIRECTLY_RELEVANT",
+        "research_dimensions": {
+            "financial_domain": {
+                "detected": true,
+                "evidence": [],
+                "context_evidence": [
+                    "financial institutions",
+                    "financial fraud"
+                ]
+            },
+            "fraud_detection": {
+                "detected": true,
+                "evidence": [
+                    "Fraud Detection"
+                ]
+            },
+            "financial_risk_assessment": {
+                "detected": false,
+                "evidence": []
+            },
+            "research_problem": {
+                "detected": true,
+                "evidence": [
+                    "Fraud Detection"
+                ]
+            },
+            "technology": {
+                "detected": true,
+                "evidence": [
+                    "Machine Learning",
+                    "Random Forest",
+                    "XGBoost",
+                    "Apache Spark",
+                    "Big Data",
+                    "SHAP"
+                ]
+            },
+            "contextual_support": {
+                "ai": [],
+                "cyber": []
+            }
+        },
+        "detected_concepts": [
+            {
+                "id": "24",
+                "name": "Fraud Detection",
+                "categories": [
+                    "fraud"
+                ],
+                "evidence": [
+                    "Fraud Detection",
+                    "financial fraud detection",
+                    "fraud detection"
+                ],
+                "source": "ontology"
+            },
+            {
+                "id": "218",
+                "name": "Machine Learning",
+                "categories": [
+                    "machine_learning"
+                ],
+                "evidence": [
+                    "Machine Learning",
+                    "machine learning",
+                    "machine learning algorithms"
+                ],
+                "source": "ontology"
+            },
+            {
+                "id": "94",
+                "name": "Random Forest",
+                "categories": [
+                    "algorithms"
+                ],
+                "evidence": [
+                    "Random Forest",
+                    "random forest"
+                ],
+                "source": "ontology"
+            },
+            {
+                "id": "98",
+                "name": "XGBoost",
+                "categories": [
+                    "algorithms"
+                ],
+                "evidence": [
+                    "XGBoost",
+                    "xgboost"
+                ],
+                "source": "ontology"
+            },
+            {
+                "id": "107",
+                "name": "Apache Spark",
+                "categories": [
+                    "big_data"
+                ],
+                "evidence": [
+                    "Apache Spark",
+                    "apache spark"
+                ],
+                "source": "ontology"
+            },
+            {
+                "id": "217",
+                "name": "Big Data",
+                "categories": [
+                    "big_data"
+                ],
+                "evidence": [
+                    "large-scale data processing"
+                ],
+                "source": "ontology"
+            },
+            {
+                "id": "106",
+                "name": "SHAP",
+                "categories": [
+                    "explainability"
+                ],
+                "evidence": [
+                    "SHAP",
+                    "shap"
+                ],
+                "source": "ontology"
+            }
+        ],
+        "ontology_relations": [],
+        "explanation": "The document contains evidence of the financial domain, a fraud detection or financial risk assessment problem, and relevant technologies or methods."
+    }
+}

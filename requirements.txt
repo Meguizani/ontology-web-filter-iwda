@@ -1,0 +1,8 @@
+
+spacy
+beautifulsoup4
+scikit-learn
+pandas
+numpy
+lxml
+pytest

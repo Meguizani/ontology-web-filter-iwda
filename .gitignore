@@ -1,0 +1,16 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local backup and duplicate files
+README (1).md
+requirements (1).txt
+ontology_spider_v1_backup.py
+data/input/requirements.txt
