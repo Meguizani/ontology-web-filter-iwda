@@ -10,10 +10,16 @@ import secrets
 from functools import wraps
 from datetime import datetime, timedelta
 from collections import Counter
-from flask import Flask, request, abort, render_template_string, redirect, session, url_for
+from flask import Flask, request, abort, render_template_string, redirect, session, url_for, send_file
+from rdflib import Graph
 
 HERE = Path(__file__).resolve().parent
 PROJECT = HERE.parent
+
+# Ensure the project root is importable when starting with: python web/app.py
+if str(PROJECT) not in sys.path:
+    sys.path.insert(0, str(PROJECT))
+
 OUT = PROJECT / "data" / "output"
 ONTOLOGY = PROJECT / "data" / "ontology" / "ali_knowledge_graph_reorganized_v2.ont"
 URLS = PROJECT / "data" / "input" / "urls.txt"
@@ -266,6 +272,7 @@ pre{background:#142238;color:#dbe5f2;padding:16px;border-radius:8px;white-space:
 <a class="{{'active' if active=='home' else ''}}" href="/">▦ &nbsp; Overview</a>
 <a class="{{'active' if active=='pages' else ''}}" href="/pages">▤ &nbsp; Web pages</a>
 <a class="{{'active' if active=='ontology' else ''}}" href="/ontology">◇ &nbsp; Ontology</a>
+<a class="{{'active' if active=='rdf' else ''}}" href="/rdf">⌘ &nbsp; RDF Explorer</a>
 <a class="{{'active' if active=='method' else ''}}" href="/method">ⓘ &nbsp; Methodology</a>
 <a class="{{'active' if active=='feedback' else ''}}" href="/feedback">✎ &nbsp; Comments</a>
 <a class="{{'active' if active=='execution' else ''}}" href="/execution">▶ &nbsp; Project Execution</a>
@@ -610,6 +617,54 @@ def start_execution(operation_id):
     )
     thread.start()
     return redirect("/execution")
+
+
+@app.route("/rdf")
+def rdf_explorer():
+    try:
+        from src.rdf_exporter import export as export_rdf
+        ttl_path, rdf_path, triple_count = export_rdf()
+        graph = Graph()
+        graph.parse(str(ttl_path), format="turtle")
+        page_num = max(1, request.args.get("page", 1, type=int))
+        page_size = 50
+        triples = sorted(graph, key=lambda t: (str(t[0]), str(t[1]), str(t[2])))
+        total_pages = max(1, (len(triples) + page_size - 1) // page_size)
+        page_num = min(page_num, total_pages)
+        visible = triples[(page_num - 1) * page_size:page_num * page_size]
+        body = f'''<section class="hero"><div class="kicker" style="color:#b7c8e4">SEMANTIC WEB EXPORT</div>
+        <h2>RDF Explorer</h2><p>Browse the RDF graph generated from the ontology and the latest crawl analysis.</p></section>
+        <section class="cards"><div class="card"><label>TOTAL RDF TRIPLES</label><strong>{triple_count}</strong><small>Unique subject-predicate-object statements</small></div>
+        <div class="card"><label>EXPORT FORMAT</label><strong>TTL</strong><small>Turtle serialization</small></div>
+        <div class="card"><label>EXPORT FORMAT</label><strong>RDF/XML</strong><small>XML serialization</small></div>
+        <div class="card"><label>PAGE</label><strong>{page_num}/{total_pages}</strong><small>{len(visible)} triples displayed</small></div></section>
+        <section class="panel"><h3>Download RDF exports</h3><p><a class="btn" href="/rdf/download/ttl">Download .ttl</a> &nbsp; <a class="btn" href="/rdf/download/rdf">Download .rdf</a></p>
+        <small>Exports are regenerated from data/output/classification_results_v5.json and the project ontology.</small></section>
+        <section class="panel"><h3>Triple register</h3><div style="overflow-x:auto"><table><tr><th>SUBJECT</th><th>PREDICATE</th><th>OBJECT</th></tr>'''
+        for subject, predicate, obj in visible:
+            body += '<tr>' + ''.join(f'<td style="overflow-wrap:anywhere">{html.escape(str(value))}</td>' for value in (subject, predicate, obj)) + '</tr>'
+        body += '</table></div><p>'
+        if page_num > 1:
+            body += f'<a href="/rdf?page={page_num-1}">Previous</a> &nbsp; '
+        if page_num < total_pages:
+            body += f'<a href="/rdf?page={page_num+1}">Next</a>'
+        body += '</p></section><div class="notice"><b>Interpretation:</b> ontology assertions are exported as graph relations. Document-to-concept links represent detected concept mentions. Textual co-occurrences are stored separately as evidence and are not asserted as ontology relations.</div>'
+        return page("RDF Explorer", "rdf", body, data())
+    except Exception as error:
+        message = html.escape(str(error))
+        body = f'<section class="panel"><h3>RDF export unavailable</h3><p class="error">{message}</p><p>Check that rdflib is installed and the crawl JSON and ontology files exist in the expected project folders.</p></section>'
+        return page("RDF Explorer", "rdf", body, data()), 500
+
+
+@app.route("/rdf/download/<fmt>")
+def rdf_download(fmt):
+    if fmt not in ("ttl", "rdf"):
+        abort(404)
+    from src.rdf_exporter import export as export_rdf
+    ttl_path, rdf_path, _ = export_rdf()
+    path = ttl_path if fmt == "ttl" else rdf_path
+    mimetype = "text/turtle" if fmt == "ttl" else "application/rdf+xml"
+    return send_file(path, as_attachment=True, download_name=path.name, mimetype=mimetype)
 
 
 if __name__=="__main__":

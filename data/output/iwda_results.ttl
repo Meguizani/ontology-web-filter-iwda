@@ -1,0 +1,812 @@
+@prefix doc: <https://w3id.org/iwda/document/> .
+@prefix iwda: <https://w3id.org/iwda/vocabulary#> .
+@prefix ns1: <http://knova.ru/ontolis-avis#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://knova.ru/ontolis-avis#node/1> a iwda:OntologyConcept ;
+    rdfs:label "ALI MEGUIZANI"@en ;
+    ns1:has <http://knova.ru/ontolis-avis#node/13>,
+        <http://knova.ru/ontolis-avis#node/19>,
+        <http://knova.ru/ontolis-avis#node/226>,
+        <http://knova.ru/ontolis-avis#node/31>,
+        <http://knova.ru/ontolis-avis#node/32> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/41>,
+        <http://knova.ru/ontolis-avis#node/5> ;
+    iwda:ontologyNodeId "1" .
+
+<http://knova.ru/ontolis-avis#node/134> a iwda:OntologyConcept ;
+    rdfs:label "Credit Card Fraud Dataset"@en ;
+    ns1:is_instance_of <http://knova.ru/ontolis-avis#node/127> ;
+    iwda:ontologyNodeId "134" .
+
+<http://knova.ru/ontolis-avis#node/14> a iwda:OntologyConcept ;
+    rdfs:label "FinTech Software"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/16> ;
+    iwda:ontologyNodeId "14" .
+
+<http://knova.ru/ontolis-avis#node/151> a iwda:OntologyConcept ;
+    rdfs:label "Risk Score"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/159> ;
+    iwda:ontologyNodeId "151" .
+
+<http://knova.ru/ontolis-avis#node/152> a iwda:OntologyConcept ;
+    rdfs:label "Precision Metrics"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/160> ;
+    iwda:ontologyNodeId "152" .
+
+<http://knova.ru/ontolis-avis#node/153> a iwda:OntologyConcept ;
+    rdfs:label "Recall Metrics"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/160> ;
+    iwda:ontologyNodeId "153" .
+
+<http://knova.ru/ontolis-avis#node/154> a iwda:OntologyConcept ;
+    rdfs:label "F1-score Metrics"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/160> ;
+    iwda:ontologyNodeId "154" .
+
+<http://knova.ru/ontolis-avis#node/155> a iwda:OntologyConcept ;
+    rdfs:label "Confusion Matrix"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/161> ;
+    iwda:ontologyNodeId "155" .
+
+<http://knova.ru/ontolis-avis#node/157> a iwda:OntologyConcept ;
+    rdfs:label "Experimental Result"@en ;
+    ns1:is_instance_of <http://knova.ru/ontolis-avis#node/162> ;
+    iwda:ontologyNodeId "157" .
+
+<http://knova.ru/ontolis-avis#node/214> a iwda:OntologyConcept ;
+    rdfs:label "New name of method"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/119> ;
+    iwda:ontologyNodeId "214" .
+
+<http://knova.ru/ontolis-avis#node/219> a iwda:OntologyConcept ;
+    rdfs:label "Financial Risk"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/144> ;
+    iwda:ontologyNodeId "219" .
+
+<http://knova.ru/ontolis-avis#node/221> a iwda:OntologyConcept ;
+    rdfs:label "Supervised Learning"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/218> ;
+    iwda:ontologyNodeId "221" .
+
+<http://knova.ru/ontolis-avis#node/222> a iwda:OntologyConcept ;
+    rdfs:label "Anomaly Detection"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/87> ;
+    iwda:ontologyNodeId "222" .
+
+<http://knova.ru/ontolis-avis#node/223> a iwda:OntologyConcept ;
+    rdfs:label "Model Explainability"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/119> ;
+    iwda:ontologyNodeId "223" .
+
+<http://knova.ru/ontolis-avis#node/228> a iwda:OntologyConcept ;
+    rdfs:label "Missing Value Handling"@en ;
+    ns1:a_part_of <http://knova.ru/ontolis-avis#node/225>,
+        <http://knova.ru/ontolis-avis#node/227> ;
+    iwda:ontologyNodeId "228" .
+
+<http://knova.ru/ontolis-avis#node/229> a iwda:OntologyConcept ;
+    rdfs:label "Duplicate Removal"@en ;
+    ns1:a_part_of <http://knova.ru/ontolis-avis#node/225>,
+        <http://knova.ru/ontolis-avis#node/227> ;
+    iwda:ontologyNodeId "229" .
+
+<http://knova.ru/ontolis-avis#node/230> a iwda:OntologyConcept ;
+    rdfs:label "Outlier Detection"@en ;
+    ns1:a_part_of <http://knova.ru/ontolis-avis#node/225>,
+        <http://knova.ru/ontolis-avis#node/227> ;
+    iwda:ontologyNodeId "230" .
+
+<http://knova.ru/ontolis-avis#node/231> a iwda:OntologyConcept ;
+    rdfs:label "Data Transformation"@en ;
+    ns1:a_part_of <http://knova.ru/ontolis-avis#node/225> ;
+    iwda:ontologyNodeId "231" .
+
+<http://knova.ru/ontolis-avis#node/232> a iwda:OntologyConcept ;
+    rdfs:label "Feature Engineering"@en ;
+    ns1:a_part_of <http://knova.ru/ontolis-avis#node/225> ;
+    iwda:ontologyNodeId "232" .
+
+<http://knova.ru/ontolis-avis#node/233> a iwda:OntologyConcept ;
+    rdfs:label "Data Integration"@en ;
+    ns1:a_part_of <http://knova.ru/ontolis-avis#node/225> ;
+    iwda:ontologyNodeId "233" .
+
+<http://knova.ru/ontolis-avis#node/44> a iwda:OntologyConcept ;
+    rdfs:label "Elena Dolgova"@en ;
+    ns1:has <http://knova.ru/ontolis-avis#node/43>,
+        <http://knova.ru/ontolis-avis#node/55>,
+        <http://knova.ru/ontolis-avis#node/57> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/40>,
+        <http://knova.ru/ontolis-avis#node/41>,
+        <http://knova.ru/ontolis-avis#node/42> ;
+    iwda:ontologyNodeId "44" .
+
+<http://knova.ru/ontolis-avis#node/60> a iwda:OntologyConcept ;
+    rdfs:label "University of Lomé"@en ;
+    ns1:has <http://knova.ru/ontolis-avis#node/2> ;
+    ns1:is_instance_of <http://knova.ru/ontolis-avis#node/62> ;
+    iwda:ontologyNodeId "60" .
+
+<http://knova.ru/ontolis-avis#node/66> a iwda:OntologyConcept ;
+    rdfs:label "ITAS Department"@en ;
+    ns1:a_part_of <http://knova.ru/ontolis-avis#node/68> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/64> ;
+    iwda:ontologyNodeId "66" .
+
+<http://knova.ru/ontolis-avis#node/7> a iwda:OntologyConcept ;
+    rdfs:label "Master Student"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/5> ;
+    iwda:ontologyNodeId "7" .
+
+<http://knova.ru/ontolis-avis#node/8> a iwda:OntologyConcept ;
+    rdfs:label "Foreign student"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/5> ;
+    iwda:ontologyNodeId "8" .
+
+<http://knova.ru/ontolis-avis#node/98> a iwda:OntologyConcept ;
+    rdfs:label "XGBoost"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/95> ;
+    iwda:ontologyNodeId "98" .
+
+doc:043a6e882fc608f7f63ae293 a iwda:WebDocument ;
+    rdfs:label "The Rise of Cyber Events and Digital Fraud in the Financial Sector" ;
+    iwda:classification "NOT RELEVANT" ;
+    iwda:contentLength 3514 ;
+    iwda:contextIndicator "cyber events",
+        "cybersecurity",
+        "financial sector",
+        "financial services" ;
+    iwda:crawlStatus "ANALYZED" ;
+    iwda:detectedResearchDimension "financial_domain",
+        "research_problem" ;
+    iwda:finalUrl "https://www.imf.org/en/publications/wp/issues/2026/03/27/the-rise-of-cyber-events-and-digital-fraud-in-the-financial-sector-575067"^^xsd:anyURI ;
+    iwda:mentionsConcept <http://knova.ru/ontolis-avis#node/24> ;
+    iwda:relevanceLevel "CONTEXTUALLY_RELATED" ;
+    iwda:relevanceScore 4.0 ;
+    iwda:url "https://www.imf.org/en/publications/wp/issues/2026/03/27/the-rise-of-cyber-events-and-digital-fraud-in-the-financial-sector-575067"^^xsd:anyURI .
+
+doc:170137b9d62025bd254ce59d a iwda:WebDocument ;
+    iwda:crawlStatus "HTTP_ERROR" ;
+    iwda:finalUrl "https://link.springer.com/article/10.1186/s40537-025-01154-1"^^xsd:anyURI ;
+    iwda:httpStatusCode 406 ;
+    iwda:url "https://link.springer.com/article/10.1186/s40537-025-01154-1"^^xsd:anyURI .
+
+doc:1b937f4fb006fc3890a57cfd a iwda:WebDocument ;
+    rdfs:label "Financial stability implications of artificial intelligence - Executive Summary" ;
+    iwda:classification "NOT RELEVANT" ;
+    iwda:contentLength 4137 ;
+    iwda:contextIndicator "ai models",
+        "artificial intelligence",
+        "financial institutions",
+        "financial sector",
+        "financial services" ;
+    iwda:crawlStatus "ANALYZED" ;
+    iwda:detectedResearchDimension "financial_domain" ;
+    iwda:finalUrl "https://www.bis.org/publications/fsi-summary-financial-stability-implications-artificial-intelligence-executive-summary"^^xsd:anyURI ;
+    iwda:relevanceLevel "CONTEXTUALLY_RELATED" ;
+    iwda:relevanceScore 1.0 ;
+    iwda:url "https://www.bis.org/publications/fsi-summary-financial-stability-implications-artificial-intelligence-executive-summary"^^xsd:anyURI .
+
+doc:2930f074d91d33e3d979bff7 a iwda:WebDocument ;
+    iwda:crawlStatus "HTTP_ERROR" ;
+    iwda:finalUrl "https://link.springer.com/article/10.1186/s40537-024-00996-5"^^xsd:anyURI ;
+    iwda:httpStatusCode 406 ;
+    iwda:url "https://link.springer.com/article/10.1186/s40537-024-00996-5"^^xsd:anyURI .
+
+doc:31a461275671e17ca3f8e0c9 a iwda:WebDocument ;
+    iwda:crawlStatus "HTTP_ERROR" ;
+    iwda:finalUrl "https://link.springer.com/article/10.1186/s40537-024-01059-5"^^xsd:anyURI ;
+    iwda:httpStatusCode 406 ;
+    iwda:url "https://link.springer.com/article/10.1186/s40537-024-01059-5"^^xsd:anyURI .
+
+doc:342b817cdd0d8d435aa8239d a iwda:WebDocument ;
+    iwda:crawlStatus "HTTP_ERROR" ;
+    iwda:finalUrl "https://www.sciencedirect.com/science/article/pii/S1877050924031028"^^xsd:anyURI ;
+    iwda:httpStatusCode 403 ;
+    iwda:url "https://www.sciencedirect.com/science/article/pii/S1877050924031028"^^xsd:anyURI .
+
+doc:36887ab9e04b8eb837eac97c a iwda:WebDocument ;
+    iwda:crawlStatus "HTTP_ERROR" ;
+    iwda:finalUrl "https://link.springer.com/article/10.1186/s40537-024-01048-8"^^xsd:anyURI ;
+    iwda:httpStatusCode 406 ;
+    iwda:url "https://link.springer.com/article/10.1186/s40537-024-01048-8"^^xsd:anyURI .
+
+doc:76b32ce401b6b373641a6ca8 a iwda:WebDocument ;
+    iwda:crawlStatus "HTTP_ERROR" ;
+    iwda:finalUrl "https://www.mdpi.com/2079-9292/14/9/1754"^^xsd:anyURI ;
+    iwda:httpStatusCode 403 ;
+    iwda:url "https://www.mdpi.com/2079-9292/14/9/1754"^^xsd:anyURI .
+
+doc:800804528a5885f79cd25808 a iwda:WebDocument ;
+    rdfs:label "Mars: Facts - NASA Science" ;
+    iwda:classification "NOT RELEVANT" ;
+    iwda:contentLength 9525 ;
+    iwda:crawlStatus "ANALYZED" ;
+    iwda:finalUrl "https://science.nasa.gov/mars/facts/"^^xsd:anyURI ;
+    iwda:relevanceLevel "NOT_RELEVANT" ;
+    iwda:relevanceScore 0.0 ;
+    iwda:url "https://science.nasa.gov/mars/facts/"^^xsd:anyURI .
+
+doc:8639d78dbcfd1a5239f8365e a iwda:WebDocument ;
+    rdfs:label "Engaging with the machine - AI and financial stability | Bank for International Settlements" ;
+    iwda:classification "RELEVANT" ;
+    iwda:contentLength 26312 ;
+    iwda:contextIndicator "ai models",
+        "ai systems",
+        "artificial intelligence",
+        "cyber attacks",
+        "financial sector",
+        "financial services",
+        "payment systems" ;
+    iwda:crawlStatus "ANALYZED" ;
+    iwda:detectedResearchDimension "financial_domain",
+        "research_problem",
+        "technology" ;
+    iwda:finalUrl "https://www.bis.org/speeches/20241104-engaging-machine-ai-and-financial-stability"^^xsd:anyURI ;
+    iwda:hasRelationEvidence <https://w3id.org/iwda/document/8639d78dbcfd1a5239f8365e/evidence/1> ;
+    iwda:mentionsConcept <http://knova.ru/ontolis-avis#node/217>,
+        <http://knova.ru/ontolis-avis#node/218>,
+        <http://knova.ru/ontolis-avis#node/224>,
+        <http://knova.ru/ontolis-avis#node/24>,
+        <http://knova.ru/ontolis-avis#node/73> ;
+    iwda:relevanceLevel "DIRECTLY_RELEVANT" ;
+    iwda:relevanceScore 14.0 ;
+    iwda:url "https://www.bis.org/speeches/20241104-engaging-machine-ai-and-financial-stability"^^xsd:anyURI .
+
+doc:90c31031564d75ffbd280100 a iwda:WebDocument ;
+    iwda:crawlStatus "HTTP_ERROR" ;
+    iwda:finalUrl "https://doi.org/10.1007/s10614-025-11071-3"^^xsd:anyURI ;
+    iwda:httpStatusCode 302 ;
+    iwda:url "https://doi.org/10.1007/s10614-025-11071-3"^^xsd:anyURI .
+
+doc:a10ad1aae397185d741d9821 a iwda:WebDocument ;
+    rdfs:label "WHO guidelines for malaria" ;
+    iwda:classification "NOT RELEVANT" ;
+    iwda:contentLength 1549 ;
+    iwda:crawlStatus "ANALYZED" ;
+    iwda:finalUrl "https://www.who.int/publications/i/item/guidelines-for-malaria"^^xsd:anyURI ;
+    iwda:relevanceLevel "NOT_RELEVANT" ;
+    iwda:relevanceScore 0.0 ;
+    iwda:url "https://www.who.int/publications/i/item/guidelines-for-malaria"^^xsd:anyURI .
+
+doc:a1d4d34baddde4cbc6f0329b a iwda:WebDocument ;
+    iwda:crawlStatus "HTTP_ERROR" ;
+    iwda:finalUrl "https://www.mdpi.com/2227-7390/12/12/1869"^^xsd:anyURI ;
+    iwda:httpStatusCode 403 ;
+    iwda:url "https://www.mdpi.com/2227-7390/12/12/1869"^^xsd:anyURI .
+
+doc:c363ee36309b43f9fe2d9b45 a iwda:WebDocument ;
+    rdfs:label "In data we trust? Emerging policy and supervisory approaches to AI data use in financial services" ;
+    iwda:classification "NOT RELEVANT" ;
+    iwda:contentLength 2148 ;
+    iwda:contextIndicator "ai systems",
+        "artificial intelligence",
+        "financial institutions",
+        "financial sector",
+        "financial services" ;
+    iwda:crawlStatus "ANALYZED" ;
+    iwda:detectedResearchDimension "financial_domain" ;
+    iwda:finalUrl "https://www.bis.org/publications/fsi-insight-73-data-we-trust-emerging-policy-and-supervisory-approaches-ai-data-use-financial-services"^^xsd:anyURI ;
+    iwda:relevanceLevel "CONTEXTUALLY_RELATED" ;
+    iwda:relevanceScore 1.0 ;
+    iwda:url "https://www.bis.org/publications/fsi-insight-73-data-we-trust-emerging-policy-and-supervisory-approaches-ai-data-use-financial-services"^^xsd:anyURI .
+
+doc:d610383f7f8b4a9c1cd5f56b a iwda:WebDocument ;
+    iwda:crawlStatus "HTTP_ERROR" ;
+    iwda:finalUrl "https://www.sciencedirect.com/science/article/pii/S2666827024000793"^^xsd:anyURI ;
+    iwda:httpStatusCode 403 ;
+    iwda:url "https://www.sciencedirect.com/science/article/pii/S2666827024000793"^^xsd:anyURI .
+
+doc:d8a3d3a1628018548becb878 a iwda:WebDocument ;
+    iwda:crawlStatus "HTTP_ERROR" ;
+    iwda:finalUrl "https://link.springer.com/article/10.1007/s10115-026-02773-7"^^xsd:anyURI ;
+    iwda:httpStatusCode 406 ;
+    iwda:url "https://link.springer.com/article/10.1007/s10115-026-02773-7"^^xsd:anyURI .
+
+doc:dd9855209a02a62dd1673352 a iwda:WebDocument ;
+    iwda:crawlStatus "HTTP_ERROR" ;
+    iwda:finalUrl "https://www.history.com/articles/ancient-egypt"^^xsd:anyURI ;
+    iwda:httpStatusCode 302 ;
+    iwda:url "https://www.history.com/articles/ancient-egypt"^^xsd:anyURI .
+
+doc:e94a6039f7ff84b0d8b8ce59 a iwda:WebDocument ;
+    rdfs:label "Artificial Intelligence and Cybersecurity in the Financial Sector" ;
+    iwda:classification "NOT RELEVANT" ;
+    iwda:contentLength 3541 ;
+    iwda:contextIndicator "artificial intelligence",
+        "artificial-intelligence",
+        "cybersecurity",
+        "financial institutions",
+        "financial sector" ;
+    iwda:crawlStatus "ANALYZED" ;
+    iwda:detectedResearchDimension "financial_domain" ;
+    iwda:finalUrl "https://www.imf.org/en/publications/imf-notes/issues/2026/06/29/artificial-intelligence-and-cybersecurity-in-the-financial-sector-576706"^^xsd:anyURI ;
+    iwda:mentionsConcept <http://knova.ru/ontolis-avis#node/220> ;
+    iwda:relevanceLevel "CONTEXTUALLY_RELATED" ;
+    iwda:relevanceScore 5.0 ;
+    iwda:url "https://www.imf.org/en/publications/imf-notes/issues/2026/06/29/artificial-intelligence-and-cybersecurity-in-the-financial-sector-576706"^^xsd:anyURI .
+
+doc:f9f35efe08c8c61d088d0f3a a iwda:WebDocument ;
+    rdfs:label "Malaria" ;
+    iwda:classification "NOT RELEVANT" ;
+    iwda:contentLength 12966 ;
+    iwda:crawlStatus "ANALYZED" ;
+    iwda:finalUrl "https://www.who.int/news-room/fact-sheets/detail/malaria"^^xsd:anyURI ;
+    iwda:relevanceLevel "NOT_RELEVANT" ;
+    iwda:relevanceScore 0.0 ;
+    iwda:url "https://www.who.int/news-room/fact-sheets/detail/malaria"^^xsd:anyURI .
+
+doc:fe062c82a66791b346e5278c a iwda:WebDocument ;
+    rdfs:label "Mars - NASA Science" ;
+    iwda:classification "NOT RELEVANT" ;
+    iwda:contentLength 10673 ;
+    iwda:crawlStatus "ANALYZED" ;
+    iwda:finalUrl "https://science.nasa.gov/mars/"^^xsd:anyURI ;
+    iwda:relevanceLevel "NOT_RELEVANT" ;
+    iwda:relevanceScore 0.0 ;
+    iwda:url "https://science.nasa.gov/mars/"^^xsd:anyURI .
+
+<http://knova.ru/ontolis-avis#node/100> a iwda:OntologyConcept ;
+    rdfs:label "Logistic Regression"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/101> ;
+    iwda:ontologyNodeId "100" .
+
+<http://knova.ru/ontolis-avis#node/101> a iwda:OntologyConcept ;
+    rdfs:label "Classification Algorithm"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/95> ;
+    iwda:ontologyNodeId "101" .
+
+<http://knova.ru/ontolis-avis#node/104> a iwda:OntologyConcept ;
+    rdfs:label "Isolation Forest"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/109> ;
+    iwda:ontologyNodeId "104" .
+
+<http://knova.ru/ontolis-avis#node/105> a iwda:OntologyConcept ;
+    rdfs:label "SMOTE"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/110> ;
+    iwda:ontologyNodeId "105" .
+
+<http://knova.ru/ontolis-avis#node/106> a iwda:OntologyConcept ;
+    rdfs:label "SHAP"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/111> ;
+    iwda:ontologyNodeId "106" .
+
+<http://knova.ru/ontolis-avis#node/107> a iwda:OntologyConcept ;
+    rdfs:label "Apache Spark"@en ;
+    ns1:has <http://knova.ru/ontolis-avis#node/137> ;
+    ns1:is_instance_of <http://knova.ru/ontolis-avis#node/112> ;
+    ns1:use_for <http://knova.ru/ontolis-avis#node/71>,
+        <http://knova.ru/ontolis-avis#node/74>,
+        <http://knova.ru/ontolis-avis#node/77> ;
+    iwda:ontologyNodeId "107" .
+
+<http://knova.ru/ontolis-avis#node/108> a iwda:OntologyConcept ;
+    rdfs:label "Random Forest Model"@en ;
+    ns1:a_part_of <http://knova.ru/ontolis-avis#node/113> ;
+    ns1:is_instance_of <http://knova.ru/ontolis-avis#node/182> ;
+    iwda:ontologyNodeId "108" .
+
+<http://knova.ru/ontolis-avis#node/109> a iwda:OntologyConcept ;
+    rdfs:label "Anomaly Detection Algorithm"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/119> ;
+    iwda:ontologyNodeId "109" .
+
+<http://knova.ru/ontolis-avis#node/110> a iwda:OntologyConcept ;
+    rdfs:label "Oversampling Method"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/119> ;
+    iwda:ontologyNodeId "110" .
+
+<http://knova.ru/ontolis-avis#node/111> a iwda:OntologyConcept ;
+    rdfs:label "Model Explainability Method"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/119> ;
+    iwda:ontologyNodeId "111" .
+
+<http://knova.ru/ontolis-avis#node/127> a iwda:OntologyConcept ;
+    rdfs:label "Financial Dataset"@en ;
+    ns1:has <http://knova.ru/ontolis-avis#node/190>,
+        <http://knova.ru/ontolis-avis#node/191> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/13>,
+        <http://knova.ru/ontolis-avis#node/144> ;
+    iwda:ontologyNodeId "127" .
+
+<http://knova.ru/ontolis-avis#node/129> a iwda:OntologyConcept ;
+    rdfs:label "Scientific Article"@en ;
+    ns1:has <http://knova.ru/ontolis-avis#node/189> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/130> ;
+    iwda:ontologyNodeId "129" .
+
+<http://knova.ru/ontolis-avis#node/136> a iwda:OntologyConcept ;
+    rdfs:label "Scikit-learn"@en ;
+    ns1:is_instance_of <http://knova.ru/ontolis-avis#node/132> ;
+    ns1:use <http://knova.ru/ontolis-avis#node/100>,
+        <http://knova.ru/ontolis-avis#node/104>,
+        <http://knova.ru/ontolis-avis#node/105>,
+        <http://knova.ru/ontolis-avis#node/106>,
+        <http://knova.ru/ontolis-avis#node/94> ;
+    ns1:use_for <http://knova.ru/ontolis-avis#node/77>,
+        <http://knova.ru/ontolis-avis#node/80> ;
+    iwda:ontologyNodeId "136" .
+
+<http://knova.ru/ontolis-avis#node/137> a iwda:OntologyConcept ;
+    rdfs:label "PySpark"@en ;
+    ns1:a_part_of <http://knova.ru/ontolis-avis#node/132> ;
+    ns1:use_for <http://knova.ru/ontolis-avis#node/77>,
+        <http://knova.ru/ontolis-avis#node/80> ;
+    iwda:ontologyNodeId "137" .
+
+<http://knova.ru/ontolis-avis#node/150> a iwda:OntologyConcept ;
+    rdfs:label "Fraud Prediction"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/158> ;
+    iwda:ontologyNodeId "150" .
+
+<http://knova.ru/ontolis-avis#node/156> a iwda:OntologyConcept ;
+    rdfs:label "Trained Fraud Detection Model"@en ;
+    ns1:a_part_of <http://knova.ru/ontolis-avis#node/113> ;
+    ns1:is_instance_of <http://knova.ru/ontolis-avis#node/182> ;
+    iwda:ontologyNodeId "156" .
+
+<http://knova.ru/ontolis-avis#node/158> a iwda:OntologyConcept ;
+    rdfs:label "Machine Learning Prediction"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/173> ;
+    iwda:ontologyNodeId "158" .
+
+<http://knova.ru/ontolis-avis#node/16> a iwda:OntologyConcept ;
+    rdfs:label "Financial Software"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/15> ;
+    iwda:ontologyNodeId "16" .
+
+<http://knova.ru/ontolis-avis#node/161> a iwda:OntologyConcept ;
+    rdfs:label "Model Evaluation Output"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/173> ;
+    iwda:ontologyNodeId "161" .
+
+<http://knova.ru/ontolis-avis#node/162> a iwda:OntologyConcept ;
+    rdfs:label "Research Result"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/173> ;
+    iwda:ontologyNodeId "162" .
+
+<http://knova.ru/ontolis-avis#node/185> a iwda:OntologyConcept ;
+    rdfs:label "Model Parameter"@en ;
+    iwda:ontologyNodeId "185" .
+
+<http://knova.ru/ontolis-avis#node/186> a iwda:OntologyConcept ;
+    rdfs:label "Evaluation Metrics"@en ;
+    ns1:has <http://knova.ru/ontolis-avis#node/173> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/308> ;
+    iwda:ontologyNodeId "186" .
+
+<http://knova.ru/ontolis-avis#node/190> a iwda:OntologyConcept ;
+    rdfs:label "Features"@en ;
+    iwda:ontologyNodeId "190" .
+
+<http://knova.ru/ontolis-avis#node/191> a iwda:OntologyConcept ;
+    rdfs:label "Target Variable"@en ;
+    iwda:ontologyNodeId "191" .
+
+<http://knova.ru/ontolis-avis#node/2> a iwda:OntologyConcept ;
+    rdfs:label "Bachelor degree"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/31> ;
+    iwda:ontologyNodeId "2" .
+
+<http://knova.ru/ontolis-avis#node/203> a iwda:OntologyConcept ;
+    rdfs:label "Software Framework"@en ;
+    ns1:has <http://knova.ru/ontolis-avis#node/112> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/204> ;
+    iwda:ontologyNodeId "203" .
+
+<http://knova.ru/ontolis-avis#node/217> a iwda:OntologyConcept ;
+    rdfs:label "Big Data"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/208> ;
+    iwda:ontologyNodeId "217" .
+
+<http://knova.ru/ontolis-avis#node/220> a iwda:OntologyConcept ;
+    rdfs:label "Financial Security"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/87> ;
+    iwda:ontologyNodeId "220" .
+
+<http://knova.ru/ontolis-avis#node/308> a iwda:OntologyConcept ;
+    rdfs:label "Function"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/119> ;
+    iwda:ontologyNodeId "308" .
+
+<http://knova.ru/ontolis-avis#node/33> a iwda:OntologyConcept ;
+    rdfs:label "Thesis"@en ;
+    ns1:a_part_of <http://knova.ru/ontolis-avis#node/226> ;
+    ns1:has <http://knova.ru/ontolis-avis#node/19> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/32> ;
+    iwda:ontologyNodeId "33" .
+
+<http://knova.ru/ontolis-avis#node/42> a iwda:OntologyConcept ;
+    rdfs:label "University Teacher"@en ;
+    ns1:has <http://knova.ru/ontolis-avis#node/43> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/40> ;
+    iwda:ontologyNodeId "42" .
+
+<http://knova.ru/ontolis-avis#node/57> a iwda:OntologyConcept ;
+    rdfs:label "shagrata@mail.ru"@en ;
+    ns1:is_instance_of <http://knova.ru/ontolis-avis#node/55> ;
+    iwda:ontologyNodeId "57" .
+
+<http://knova.ru/ontolis-avis#node/68> a iwda:OntologyConcept ;
+    rdfs:label "PNIPU"@en ;
+    ns1:is_instance_of <http://knova.ru/ontolis-avis#node/62> ;
+    iwda:ontologyNodeId "68" .
+
+<http://knova.ru/ontolis-avis#node/73> a iwda:OntologyConcept ;
+    rdfs:label "Credit Risk Assessment"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/74> ;
+    iwda:ontologyNodeId "73" .
+
+<http://knova.ru/ontolis-avis#node/76> a iwda:OntologyConcept ;
+    rdfs:label "Data Preprocessing"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/225>,
+        <http://knova.ru/ontolis-avis#node/77> ;
+    iwda:ontologyNodeId "76" .
+
+<http://knova.ru/ontolis-avis#node/79> a iwda:OntologyConcept ;
+    rdfs:label "Model Evaluation"@en ;
+    ns1:a_part_of <http://knova.ru/ontolis-avis#node/83> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/80> ;
+    iwda:ontologyNodeId "79" .
+
+<http://knova.ru/ontolis-avis#node/82> a iwda:OntologyConcept ;
+    rdfs:label "Financial Fraud Detection Workflow"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/202> ;
+    iwda:ontologyNodeId "82" .
+
+<http://knova.ru/ontolis-avis#node/94> a iwda:OntologyConcept ;
+    rdfs:label "Random Forest"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/95> ;
+    iwda:ontologyNodeId "94" .
+
+<https://w3id.org/iwda/document/8639d78dbcfd1a5239f8365e/evidence/1> a iwda:RelationEvidence ;
+    iwda:evidenceRelationLabel "use_for" ;
+    iwda:evidenceSentence "For example, payment systems have long used machine learning automatically to block suspicious payments – and one card scheme is this year upgrading its fraud detection system using a foundation model trained on a purported one trillion data points." ;
+    iwda:evidenceSourceLabel "Fraud Detection System" ;
+    iwda:evidenceTargetLabel "Fraud Detection" ;
+    iwda:evidenceType "same_sentence_cooccurrence" .
+
+<http://knova.ru/ontolis-avis#node/11> a iwda:OntologyConcept ;
+    rdfs:label "Research Dataset"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/13> ;
+    ns1:is_instance_of <http://knova.ru/ontolis-avis#node/13> ;
+    iwda:ontologyNodeId "11" .
+
+<http://knova.ru/ontolis-avis#node/112> a iwda:OntologyConcept ;
+    rdfs:label "Big Data Processing Framework"@en ;
+    ns1:has <http://knova.ru/ontolis-avis#node/107> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/203> ;
+    iwda:ontologyNodeId "112" .
+
+<http://knova.ru/ontolis-avis#node/113> a iwda:OntologyConcept ;
+    rdfs:label "Fraud Detection Module"@en ;
+    ns1:a_part_of <http://knova.ru/ontolis-avis#node/19> ;
+    ns1:has <http://knova.ru/ontolis-avis#node/182>,
+        <http://knova.ru/ontolis-avis#node/183>,
+        <http://knova.ru/ontolis-avis#node/184> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/201> ;
+    iwda:ontologyNodeId "113" .
+
+<http://knova.ru/ontolis-avis#node/130> a iwda:OntologyConcept ;
+    rdfs:label "Research Resource"@en ;
+    ns1:has <http://knova.ru/ontolis-avis#node/13> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/144> ;
+    iwda:ontologyNodeId "130" .
+
+<http://knova.ru/ontolis-avis#node/132> a iwda:OntologyConcept ;
+    rdfs:label "Python Library"@en ;
+    ns1:has <http://knova.ru/ontolis-avis#node/136> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/15>,
+        <http://knova.ru/ontolis-avis#node/204> ;
+    iwda:ontologyNodeId "132" .
+
+<http://knova.ru/ontolis-avis#node/159> a iwda:OntologyConcept ;
+    rdfs:label "Risk Assessment Output"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/173> ;
+    iwda:ontologyNodeId "159" .
+
+<http://knova.ru/ontolis-avis#node/183> a iwda:OntologyConcept ;
+    rdfs:label "Data Processing Module"@en ;
+    iwda:ontologyNodeId "183" .
+
+<http://knova.ru/ontolis-avis#node/184> a iwda:OntologyConcept ;
+    rdfs:label "Prediction Module"@en ;
+    iwda:ontologyNodeId "184" .
+
+<http://knova.ru/ontolis-avis#node/189> a iwda:OntologyConcept ;
+    rdfs:label "Methodology"@en ;
+    iwda:ontologyNodeId "189" .
+
+<http://knova.ru/ontolis-avis#node/202> a iwda:OntologyConcept ;
+    rdfs:label "Workflow"@en ;
+    iwda:ontologyNodeId "202" .
+
+<http://knova.ru/ontolis-avis#node/204> a iwda:OntologyConcept ;
+    rdfs:label "Software Resource"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/144> ;
+    iwda:ontologyNodeId "204" .
+
+<http://knova.ru/ontolis-avis#node/212> a iwda:OntologyConcept ;
+    rdfs:label "Financial Risk Assessment Module"@en ;
+    ns1:a_part_of <http://knova.ru/ontolis-avis#node/19>,
+        <http://knova.ru/ontolis-avis#node/224> ;
+    iwda:ontologyNodeId "212" .
+
+<http://knova.ru/ontolis-avis#node/218> a iwda:OntologyConcept ;
+    rdfs:label "Machine Learning"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/208> ;
+    iwda:ontologyNodeId "218" .
+
+<http://knova.ru/ontolis-avis#node/226> a iwda:OntologyConcept ;
+    rdfs:label "Research Project"@en ;
+    ns1:has <http://knova.ru/ontolis-avis#node/11>,
+        <http://knova.ru/ontolis-avis#node/129>,
+        <http://knova.ru/ontolis-avis#node/130>,
+        <http://knova.ru/ontolis-avis#node/173>,
+        <http://knova.ru/ontolis-avis#node/189>,
+        <http://knova.ru/ontolis-avis#node/212>,
+        <http://knova.ru/ontolis-avis#node/224>,
+        <http://knova.ru/ontolis-avis#node/33>,
+        <http://knova.ru/ontolis-avis#node/83> ;
+    iwda:ontologyNodeId "226" .
+
+<http://knova.ru/ontolis-avis#node/31> a iwda:OntologyConcept ;
+    rdfs:label "Academic degree"@en ;
+    iwda:ontologyNodeId "31" .
+
+<http://knova.ru/ontolis-avis#node/32> a iwda:OntologyConcept ;
+    rdfs:label "Academic Work"@en ;
+    iwda:ontologyNodeId "32" .
+
+<http://knova.ru/ontolis-avis#node/40> a iwda:OntologyConcept ;
+    rdfs:label "Teacher"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/41> ;
+    iwda:ontologyNodeId "40" .
+
+<http://knova.ru/ontolis-avis#node/43> a iwda:OntologyConcept ;
+    rdfs:label "First and Last Name"@en ;
+    iwda:ontologyNodeId "43" .
+
+<http://knova.ru/ontolis-avis#node/55> a iwda:OntologyConcept ;
+    rdfs:label "Email"@en ;
+    iwda:ontologyNodeId "55" .
+
+<http://knova.ru/ontolis-avis#node/62> a iwda:OntologyConcept ;
+    rdfs:label "University"@en ;
+    ns1:has <http://knova.ru/ontolis-avis#node/64> ;
+    iwda:ontologyNodeId "62" .
+
+<http://knova.ru/ontolis-avis#node/64> a iwda:OntologyConcept ;
+    rdfs:label "Department"@en ;
+    iwda:ontologyNodeId "64" .
+
+<http://knova.ru/ontolis-avis#node/71> a iwda:OntologyConcept ;
+    rdfs:label "Financial Security Task"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/87> ;
+    iwda:ontologyNodeId "71" .
+
+<http://knova.ru/ontolis-avis#node/15> a iwda:OntologyConcept ;
+    rdfs:label "Software"@en ;
+    iwda:ontologyNodeId "15" .
+
+<http://knova.ru/ontolis-avis#node/160> a iwda:OntologyConcept ;
+    rdfs:label "Classification Metric"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/186> ;
+    iwda:ontologyNodeId "160" .
+
+<http://knova.ru/ontolis-avis#node/201> a iwda:OntologyConcept ;
+    rdfs:label "System"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/15> ;
+    iwda:ontologyNodeId "201" .
+
+<http://knova.ru/ontolis-avis#node/208> a iwda:OntologyConcept ;
+    rdfs:label "AI System"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/201> ;
+    iwda:ontologyNodeId "208" .
+
+<http://knova.ru/ontolis-avis#node/224> a iwda:OntologyConcept ;
+    rdfs:label "Fraud Detection System"@en ;
+    ns1:has <http://knova.ru/ontolis-avis#node/156>,
+        <http://knova.ru/ontolis-avis#node/182>,
+        <http://knova.ru/ontolis-avis#node/183>,
+        <http://knova.ru/ontolis-avis#node/184>,
+        <http://knova.ru/ontolis-avis#node/212> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/201> ;
+    ns1:use_for <http://knova.ru/ontolis-avis#node/24>,
+        <http://knova.ru/ontolis-avis#node/74> ;
+    iwda:ontologyNodeId "224" .
+
+<http://knova.ru/ontolis-avis#node/227> a iwda:OntologyConcept ;
+    rdfs:label "Data Cleaning"@en ;
+    ns1:a_part_of <http://knova.ru/ontolis-avis#node/225> ;
+    iwda:ontologyNodeId "227" .
+
+<http://knova.ru/ontolis-avis#node/24> a iwda:OntologyConcept ;
+    rdfs:label "Fraud Detection"@en ;
+    ns1:a_part_of <http://knova.ru/ontolis-avis#node/82> ;
+    ns1:has <http://knova.ru/ontolis-avis#node/11>,
+        <http://knova.ru/ontolis-avis#node/150> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/71> ;
+    iwda:ontologyNodeId "24" .
+
+<http://knova.ru/ontolis-avis#node/5> a iwda:OntologyConcept ;
+    rdfs:label "Student"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/41> ;
+    iwda:ontologyNodeId "5" .
+
+<http://knova.ru/ontolis-avis#node/74> a iwda:OntologyConcept ;
+    rdfs:label "Financial Risk Assessment Task"@en ;
+    ns1:has <http://knova.ru/ontolis-avis#node/159> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/87> ;
+    iwda:ontologyNodeId "74" .
+
+<http://knova.ru/ontolis-avis#node/80> a iwda:OntologyConcept ;
+    rdfs:label "Machine Learning Evaluation Task"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/87> ;
+    iwda:ontologyNodeId "80" .
+
+<http://knova.ru/ontolis-avis#node/95> a iwda:OntologyConcept ;
+    rdfs:label "Supervised Learning Algorithm"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/119> ;
+    iwda:ontologyNodeId "95" .
+
+<http://knova.ru/ontolis-avis#node/182> a iwda:OntologyConcept ;
+    rdfs:label "Machine Learning Model"@en ;
+    ns1:has <http://knova.ru/ontolis-avis#node/185> ;
+    iwda:ontologyNodeId "182" .
+
+<http://knova.ru/ontolis-avis#node/19> a iwda:OntologyConcept ;
+    rdfs:label "ALIAI System"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/208> ;
+    iwda:ontologyNodeId "19" .
+
+<http://knova.ru/ontolis-avis#node/41> a iwda:OntologyConcept ;
+    rdfs:label "Person"@en ;
+    iwda:ontologyNodeId "41" .
+
+<http://knova.ru/ontolis-avis#node/83> a iwda:OntologyConcept ;
+    rdfs:label "Machine Learning Pipeline"@en ;
+    ns1:has <http://knova.ru/ontolis-avis#node/108>,
+        <http://knova.ru/ontolis-avis#node/76>,
+        <http://knova.ru/ontolis-avis#node/79> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/202>,
+        <http://knova.ru/ontolis-avis#node/87> ;
+    iwda:ontologyNodeId "83" .
+
+<http://knova.ru/ontolis-avis#node/13> a iwda:OntologyConcept ;
+    rdfs:label "Dataset"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/144> ;
+    iwda:ontologyNodeId "13" .
+
+<http://knova.ru/ontolis-avis#node/77> a iwda:OntologyConcept ;
+    rdfs:label "Data Preprocessing Task"@en ;
+    ns1:a_part_of <http://knova.ru/ontolis-avis#node/83> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/87> ;
+    iwda:ontologyNodeId "77" .
+
+<http://knova.ru/ontolis-avis#node/144> a iwda:OntologyConcept ;
+    rdfs:label "Resource"@en ;
+    iwda:ontologyNodeId "144" .
+
+<http://knova.ru/ontolis-avis#node/173> a iwda:OntologyConcept ;
+    rdfs:label "Result"@en ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/144> ;
+    iwda:ontologyNodeId "173" .
+
+<http://knova.ru/ontolis-avis#node/119> a iwda:OntologyConcept ;
+    rdfs:label "Method"@en ;
+    iwda:ontologyNodeId "119" .
+
+<http://knova.ru/ontolis-avis#node/225> a iwda:OntologyConcept ;
+    rdfs:label "Data Preparation Task"@en ;
+    ns1:a_part_of <http://knova.ru/ontolis-avis#node/77>,
+        <http://knova.ru/ontolis-avis#node/83> ;
+    ns1:is_a <http://knova.ru/ontolis-avis#node/87> ;
+    iwda:ontologyNodeId "225" .
+
+<http://knova.ru/ontolis-avis#node/87> a iwda:OntologyConcept ;
+    rdfs:label "Task"@en ;
+    iwda:ontologyNodeId "87" .
+

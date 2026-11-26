@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:iwda="https://w3id.org/iwda/vocabulary#"
+   xmlns:ns1="http://knova.ru/ontolis-avis#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/dd9855209a02a62dd1673352">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.history.com/articles/ancient-egypt</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.history.com/articles/ancient-egypt</iwda:finalUrl>
+    <iwda:crawlStatus>HTTP_ERROR</iwda:crawlStatus>
+    <iwda:httpStatusCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">302</iwda:httpStatusCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/98">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">XGBoost</rdfs:label>
+    <iwda:ontologyNodeId>98</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/95"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/800804528a5885f79cd25808">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://science.nasa.gov/mars/facts/</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://science.nasa.gov/mars/facts/</iwda:finalUrl>
+    <rdfs:label>Mars: Facts - NASA Science</rdfs:label>
+    <iwda:crawlStatus>ANALYZED</iwda:crawlStatus>
+    <iwda:contentLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9525</iwda:contentLength>
+    <iwda:classification>NOT RELEVANT</iwda:classification>
+    <iwda:relevanceLevel>NOT_RELEVANT</iwda:relevanceLevel>
+    <iwda:relevanceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</iwda:relevanceScore>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/95">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Supervised Learning Algorithm</rdfs:label>
+    <iwda:ontologyNodeId>95</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/119"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/221">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Supervised Learning</rdfs:label>
+    <iwda:ontologyNodeId>221</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/218"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/100">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Logistic Regression</rdfs:label>
+    <iwda:ontologyNodeId>100</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/101"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/68">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">PNIPU</rdfs:label>
+    <iwda:ontologyNodeId>68</iwda:ontologyNodeId>
+    <ns1:is_instance_of rdf:resource="http://knova.ru/ontolis-avis#node/62"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/152">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Precision Metrics</rdfs:label>
+    <iwda:ontologyNodeId>152</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/160"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/137">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">PySpark</rdfs:label>
+    <iwda:ontologyNodeId>137</iwda:ontologyNodeId>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/132"/>
+    <ns1:use_for rdf:resource="http://knova.ru/ontolis-avis#node/77"/>
+    <ns1:use_for rdf:resource="http://knova.ru/ontolis-avis#node/80"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/e94a6039f7ff84b0d8b8ce59">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.imf.org/en/publications/imf-notes/issues/2026/06/29/artificial-intelligence-and-cybersecurity-in-the-financial-sector-576706</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.imf.org/en/publications/imf-notes/issues/2026/06/29/artificial-intelligence-and-cybersecurity-in-the-financial-sector-576706</iwda:finalUrl>
+    <rdfs:label>Artificial Intelligence and Cybersecurity in the Financial Sector</rdfs:label>
+    <iwda:crawlStatus>ANALYZED</iwda:crawlStatus>
+    <iwda:contentLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3541</iwda:contentLength>
+    <iwda:classification>NOT RELEVANT</iwda:classification>
+    <iwda:relevanceLevel>CONTEXTUALLY_RELATED</iwda:relevanceLevel>
+    <iwda:relevanceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</iwda:relevanceScore>
+    <iwda:mentionsConcept rdf:resource="http://knova.ru/ontolis-avis#node/220"/>
+    <iwda:contextIndicator>financial sector</iwda:contextIndicator>
+    <iwda:contextIndicator>financial institutions</iwda:contextIndicator>
+    <iwda:contextIndicator>artificial intelligence</iwda:contextIndicator>
+    <iwda:contextIndicator>artificial-intelligence</iwda:contextIndicator>
+    <iwda:contextIndicator>cybersecurity</iwda:contextIndicator>
+    <iwda:detectedResearchDimension>financial_domain</iwda:detectedResearchDimension>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/a10ad1aae397185d741d9821">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.who.int/publications/i/item/guidelines-for-malaria</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.who.int/publications/i/item/guidelines-for-malaria</iwda:finalUrl>
+    <rdfs:label>WHO guidelines for malaria</rdfs:label>
+    <iwda:crawlStatus>ANALYZED</iwda:crawlStatus>
+    <iwda:contentLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1549</iwda:contentLength>
+    <iwda:classification>NOT RELEVANT</iwda:classification>
+    <iwda:relevanceLevel>NOT_RELEVANT</iwda:relevanceLevel>
+    <iwda:relevanceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</iwda:relevanceScore>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/160">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Classification Metric</rdfs:label>
+    <iwda:ontologyNodeId>160</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/186"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/224">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Fraud Detection System</rdfs:label>
+    <iwda:ontologyNodeId>224</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/201"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/184"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/183"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/182"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/156"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/212"/>
+    <ns1:use_for rdf:resource="http://knova.ru/ontolis-avis#node/24"/>
+    <ns1:use_for rdf:resource="http://knova.ru/ontolis-avis#node/74"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/203">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Software Framework</rdfs:label>
+    <iwda:ontologyNodeId>203</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/204"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/112"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/43">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">First and Last Name</rdfs:label>
+    <iwda:ontologyNodeId>43</iwda:ontologyNodeId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/7">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Master Student</rdfs:label>
+    <iwda:ontologyNodeId>7</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/043a6e882fc608f7f63ae293">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.imf.org/en/publications/wp/issues/2026/03/27/the-rise-of-cyber-events-and-digital-fraud-in-the-financial-sector-575067</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.imf.org/en/publications/wp/issues/2026/03/27/the-rise-of-cyber-events-and-digital-fraud-in-the-financial-sector-575067</iwda:finalUrl>
+    <rdfs:label>The Rise of Cyber Events and Digital Fraud in the Financial Sector</rdfs:label>
+    <iwda:crawlStatus>ANALYZED</iwda:crawlStatus>
+    <iwda:contentLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3514</iwda:contentLength>
+    <iwda:classification>NOT RELEVANT</iwda:classification>
+    <iwda:relevanceLevel>CONTEXTUALLY_RELATED</iwda:relevanceLevel>
+    <iwda:relevanceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</iwda:relevanceScore>
+    <iwda:mentionsConcept rdf:resource="http://knova.ru/ontolis-avis#node/24"/>
+    <iwda:contextIndicator>financial sector</iwda:contextIndicator>
+    <iwda:contextIndicator>financial services</iwda:contextIndicator>
+    <iwda:contextIndicator>cybersecurity</iwda:contextIndicator>
+    <iwda:contextIndicator>cyber events</iwda:contextIndicator>
+    <iwda:detectedResearchDimension>financial_domain</iwda:detectedResearchDimension>
+    <iwda:detectedResearchDimension>research_problem</iwda:detectedResearchDimension>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/31">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Academic degree</rdfs:label>
+    <iwda:ontologyNodeId>31</iwda:ontologyNodeId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/16">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Financial Software</rdfs:label>
+    <iwda:ontologyNodeId>16</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/15"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/8639d78dbcfd1a5239f8365e">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.bis.org/speeches/20241104-engaging-machine-ai-and-financial-stability</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.bis.org/speeches/20241104-engaging-machine-ai-and-financial-stability</iwda:finalUrl>
+    <rdfs:label>Engaging with the machine - AI and financial stability | Bank for International Settlements</rdfs:label>
+    <iwda:crawlStatus>ANALYZED</iwda:crawlStatus>
+    <iwda:contentLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26312</iwda:contentLength>
+    <iwda:classification>RELEVANT</iwda:classification>
+    <iwda:relevanceLevel>DIRECTLY_RELEVANT</iwda:relevanceLevel>
+    <iwda:relevanceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.0</iwda:relevanceScore>
+    <iwda:mentionsConcept rdf:resource="http://knova.ru/ontolis-avis#node/24"/>
+    <iwda:mentionsConcept rdf:resource="http://knova.ru/ontolis-avis#node/217"/>
+    <iwda:mentionsConcept rdf:resource="http://knova.ru/ontolis-avis#node/224"/>
+    <iwda:mentionsConcept rdf:resource="http://knova.ru/ontolis-avis#node/73"/>
+    <iwda:mentionsConcept rdf:resource="http://knova.ru/ontolis-avis#node/218"/>
+    <iwda:contextIndicator>financial sector</iwda:contextIndicator>
+    <iwda:contextIndicator>financial services</iwda:contextIndicator>
+    <iwda:contextIndicator>payment systems</iwda:contextIndicator>
+    <iwda:contextIndicator>artificial intelligence</iwda:contextIndicator>
+    <iwda:contextIndicator>ai systems</iwda:contextIndicator>
+    <iwda:contextIndicator>ai models</iwda:contextIndicator>
+    <iwda:contextIndicator>cyber attacks</iwda:contextIndicator>
+    <iwda:detectedResearchDimension>financial_domain</iwda:detectedResearchDimension>
+    <iwda:detectedResearchDimension>research_problem</iwda:detectedResearchDimension>
+    <iwda:detectedResearchDimension>technology</iwda:detectedResearchDimension>
+    <iwda:hasRelationEvidence rdf:resource="https://w3id.org/iwda/document/8639d78dbcfd1a5239f8365e/evidence/1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/8639d78dbcfd1a5239f8365e/evidence/1">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#RelationEvidence"/>
+    <iwda:evidenceSourceLabel>Fraud Detection System</iwda:evidenceSourceLabel>
+    <iwda:evidenceRelationLabel>use_for</iwda:evidenceRelationLabel>
+    <iwda:evidenceTargetLabel>Fraud Detection</iwda:evidenceTargetLabel>
+    <iwda:evidenceType>same_sentence_cooccurrence</iwda:evidenceType>
+    <iwda:evidenceSentence>For example, payment systems have long used machine learning automatically to block suspicious payments – and one card scheme is this year upgrading its fraud detection system using a foundation model trained on a purported one trillion data points.</iwda:evidenceSentence>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/157">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Experimental Result</rdfs:label>
+    <iwda:ontologyNodeId>157</iwda:ontologyNodeId>
+    <ns1:is_instance_of rdf:resource="http://knova.ru/ontolis-avis#node/162"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/226">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Research Project</rdfs:label>
+    <iwda:ontologyNodeId>226</iwda:ontologyNodeId>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/33"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/130"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/224"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/83"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/212"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/173"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/189"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/11"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/129"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/77">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Data Preprocessing Task</rdfs:label>
+    <iwda:ontologyNodeId>77</iwda:ontologyNodeId>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/83"/>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/87"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/232">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Feature Engineering</rdfs:label>
+    <iwda:ontologyNodeId>232</iwda:ontologyNodeId>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/225"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/134">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Credit Card Fraud Dataset</rdfs:label>
+    <iwda:ontologyNodeId>134</iwda:ontologyNodeId>
+    <ns1:is_instance_of rdf:resource="http://knova.ru/ontolis-avis#node/127"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/218">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Machine Learning</rdfs:label>
+    <iwda:ontologyNodeId>218</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/208"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/80">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Machine Learning Evaluation Task</rdfs:label>
+    <iwda:ontologyNodeId>80</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/87"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/40">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Teacher</rdfs:label>
+    <iwda:ontologyNodeId>40</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/41"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/155">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Confusion Matrix</rdfs:label>
+    <iwda:ontologyNodeId>155</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/161"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/184">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Prediction Module</rdfs:label>
+    <iwda:ontologyNodeId>184</iwda:ontologyNodeId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/44">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Elena Dolgova</rdfs:label>
+    <iwda:ontologyNodeId>44</iwda:ontologyNodeId>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/43"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/55"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/57"/>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/40"/>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/41"/>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/42"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/42">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">University Teacher</rdfs:label>
+    <iwda:ontologyNodeId>42</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/40"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/43"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/182">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Machine Learning Model</rdfs:label>
+    <iwda:ontologyNodeId>182</iwda:ontologyNodeId>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/185"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/170137b9d62025bd254ce59d">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://link.springer.com/article/10.1186/s40537-025-01154-1</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://link.springer.com/article/10.1186/s40537-025-01154-1</iwda:finalUrl>
+    <iwda:crawlStatus>HTTP_ERROR</iwda:crawlStatus>
+    <iwda:httpStatusCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">406</iwda:httpStatusCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/132">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Python Library</rdfs:label>
+    <iwda:ontologyNodeId>132</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/204"/>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/15"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/136"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/228">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Missing Value Handling</rdfs:label>
+    <iwda:ontologyNodeId>228</iwda:ontologyNodeId>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/225"/>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/227"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/190">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Features</rdfs:label>
+    <iwda:ontologyNodeId>190</iwda:ontologyNodeId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/112">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Big Data Processing Framework</rdfs:label>
+    <iwda:ontologyNodeId>112</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/203"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/107"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/1b937f4fb006fc3890a57cfd">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.bis.org/publications/fsi-summary-financial-stability-implications-artificial-intelligence-executive-summary</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.bis.org/publications/fsi-summary-financial-stability-implications-artificial-intelligence-executive-summary</iwda:finalUrl>
+    <rdfs:label>Financial stability implications of artificial intelligence - Executive Summary</rdfs:label>
+    <iwda:crawlStatus>ANALYZED</iwda:crawlStatus>
+    <iwda:contentLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4137</iwda:contentLength>
+    <iwda:classification>NOT RELEVANT</iwda:classification>
+    <iwda:relevanceLevel>CONTEXTUALLY_RELATED</iwda:relevanceLevel>
+    <iwda:relevanceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</iwda:relevanceScore>
+    <iwda:contextIndicator>financial sector</iwda:contextIndicator>
+    <iwda:contextIndicator>financial services</iwda:contextIndicator>
+    <iwda:contextIndicator>financial institutions</iwda:contextIndicator>
+    <iwda:contextIndicator>artificial intelligence</iwda:contextIndicator>
+    <iwda:contextIndicator>ai models</iwda:contextIndicator>
+    <iwda:detectedResearchDimension>financial_domain</iwda:detectedResearchDimension>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/c363ee36309b43f9fe2d9b45">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.bis.org/publications/fsi-insight-73-data-we-trust-emerging-policy-and-supervisory-approaches-ai-data-use-financial-services</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.bis.org/publications/fsi-insight-73-data-we-trust-emerging-policy-and-supervisory-approaches-ai-data-use-financial-services</iwda:finalUrl>
+    <rdfs:label>In data we trust? Emerging policy and supervisory approaches to AI data use in financial services</rdfs:label>
+    <iwda:crawlStatus>ANALYZED</iwda:crawlStatus>
+    <iwda:contentLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2148</iwda:contentLength>
+    <iwda:classification>NOT RELEVANT</iwda:classification>
+    <iwda:relevanceLevel>CONTEXTUALLY_RELATED</iwda:relevanceLevel>
+    <iwda:relevanceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</iwda:relevanceScore>
+    <iwda:contextIndicator>financial sector</iwda:contextIndicator>
+    <iwda:contextIndicator>financial services</iwda:contextIndicator>
+    <iwda:contextIndicator>financial institutions</iwda:contextIndicator>
+    <iwda:contextIndicator>artificial intelligence</iwda:contextIndicator>
+    <iwda:contextIndicator>ai systems</iwda:contextIndicator>
+    <iwda:detectedResearchDimension>financial_domain</iwda:detectedResearchDimension>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/79">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Model Evaluation</rdfs:label>
+    <iwda:ontologyNodeId>79</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/80"/>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/83"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/223">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Model Explainability</rdfs:label>
+    <iwda:ontologyNodeId>223</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/119"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/208">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">AI System</rdfs:label>
+    <iwda:ontologyNodeId>208</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/201"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/308">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Function</rdfs:label>
+    <iwda:ontologyNodeId>308</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/119"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/90c31031564d75ffbd280100">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1007/s10614-025-11071-3</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1007/s10614-025-11071-3</iwda:finalUrl>
+    <iwda:crawlStatus>HTTP_ERROR</iwda:crawlStatus>
+    <iwda:httpStatusCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">302</iwda:httpStatusCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/24">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Fraud Detection</rdfs:label>
+    <iwda:ontologyNodeId>24</iwda:ontologyNodeId>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/11"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/150"/>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/71"/>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/82"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/113">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Fraud Detection Module</rdfs:label>
+    <iwda:ontologyNodeId>113</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/201"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/184"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/183"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/182"/>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/19"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/76b32ce401b6b373641a6ca8">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.mdpi.com/2079-9292/14/9/1754</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.mdpi.com/2079-9292/14/9/1754</iwda:finalUrl>
+    <iwda:crawlStatus>HTTP_ERROR</iwda:crawlStatus>
+    <iwda:httpStatusCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">403</iwda:httpStatusCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/231">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Data Transformation</rdfs:label>
+    <iwda:ontologyNodeId>231</iwda:ontologyNodeId>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/225"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/136">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Scikit-learn</rdfs:label>
+    <iwda:ontologyNodeId>136</iwda:ontologyNodeId>
+    <ns1:is_instance_of rdf:resource="http://knova.ru/ontolis-avis#node/132"/>
+    <ns1:use rdf:resource="http://knova.ru/ontolis-avis#node/94"/>
+    <ns1:use rdf:resource="http://knova.ru/ontolis-avis#node/100"/>
+    <ns1:use rdf:resource="http://knova.ru/ontolis-avis#node/104"/>
+    <ns1:use rdf:resource="http://knova.ru/ontolis-avis#node/105"/>
+    <ns1:use rdf:resource="http://knova.ru/ontolis-avis#node/106"/>
+    <ns1:use_for rdf:resource="http://knova.ru/ontolis-avis#node/77"/>
+    <ns1:use_for rdf:resource="http://knova.ru/ontolis-avis#node/80"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/150">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Fraud Prediction</rdfs:label>
+    <iwda:ontologyNodeId>150</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/158"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/66">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">ITAS Department</rdfs:label>
+    <iwda:ontologyNodeId>66</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/64"/>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/68"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/101">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Classification Algorithm</rdfs:label>
+    <iwda:ontologyNodeId>101</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/95"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/159">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Risk Assessment Output</rdfs:label>
+    <iwda:ontologyNodeId>159</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/173"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/154">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">F1-score Metrics</rdfs:label>
+    <iwda:ontologyNodeId>154</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/160"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/74">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Financial Risk Assessment Task</rdfs:label>
+    <iwda:ontologyNodeId>74</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/87"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/159"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/342b817cdd0d8d435aa8239d">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.sciencedirect.com/science/article/pii/S1877050924031028</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.sciencedirect.com/science/article/pii/S1877050924031028</iwda:finalUrl>
+    <iwda:crawlStatus>HTTP_ERROR</iwda:crawlStatus>
+    <iwda:httpStatusCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">403</iwda:httpStatusCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/162">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Research Result</rdfs:label>
+    <iwda:ontologyNodeId>162</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/173"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/214">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">New name of method</rdfs:label>
+    <iwda:ontologyNodeId>214</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/119"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/233">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Data Integration</rdfs:label>
+    <iwda:ontologyNodeId>233</iwda:ontologyNodeId>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/225"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/156">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Trained Fraud Detection Model</rdfs:label>
+    <iwda:ontologyNodeId>156</iwda:ontologyNodeId>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/113"/>
+    <ns1:is_instance_of rdf:resource="http://knova.ru/ontolis-avis#node/182"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/161">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Model Evaluation Output</rdfs:label>
+    <iwda:ontologyNodeId>161</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/173"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/13">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Dataset</rdfs:label>
+    <iwda:ontologyNodeId>13</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/144"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/fe062c82a66791b346e5278c">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://science.nasa.gov/mars/</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://science.nasa.gov/mars/</iwda:finalUrl>
+    <rdfs:label>Mars - NASA Science</rdfs:label>
+    <iwda:crawlStatus>ANALYZED</iwda:crawlStatus>
+    <iwda:contentLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10673</iwda:contentLength>
+    <iwda:classification>NOT RELEVANT</iwda:classification>
+    <iwda:relevanceLevel>NOT_RELEVANT</iwda:relevanceLevel>
+    <iwda:relevanceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</iwda:relevanceScore>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/185">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Model Parameter</rdfs:label>
+    <iwda:ontologyNodeId>185</iwda:ontologyNodeId>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/d610383f7f8b4a9c1cd5f56b">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.sciencedirect.com/science/article/pii/S2666827024000793</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.sciencedirect.com/science/article/pii/S2666827024000793</iwda:finalUrl>
+    <iwda:crawlStatus>HTTP_ERROR</iwda:crawlStatus>
+    <iwda:httpStatusCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">403</iwda:httpStatusCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/8">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Foreign student</rdfs:label>
+    <iwda:ontologyNodeId>8</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/19">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">ALIAI System</rdfs:label>
+    <iwda:ontologyNodeId>19</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/208"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/201">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">System</rdfs:label>
+    <iwda:ontologyNodeId>201</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/15"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/f9f35efe08c8c61d088d0f3a">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.who.int/news-room/fact-sheets/detail/malaria</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.who.int/news-room/fact-sheets/detail/malaria</iwda:finalUrl>
+    <rdfs:label>Malaria</rdfs:label>
+    <iwda:crawlStatus>ANALYZED</iwda:crawlStatus>
+    <iwda:contentLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12966</iwda:contentLength>
+    <iwda:classification>NOT RELEVANT</iwda:classification>
+    <iwda:relevanceLevel>NOT_RELEVANT</iwda:relevanceLevel>
+    <iwda:relevanceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</iwda:relevanceScore>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/186">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Evaluation Metrics</rdfs:label>
+    <iwda:ontologyNodeId>186</iwda:ontologyNodeId>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/173"/>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/308"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/230">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Outlier Detection</rdfs:label>
+    <iwda:ontologyNodeId>230</iwda:ontologyNodeId>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/225"/>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/227"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/106">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">SHAP</rdfs:label>
+    <iwda:ontologyNodeId>106</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/111"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/222">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Anomaly Detection</rdfs:label>
+    <iwda:ontologyNodeId>222</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/87"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/107">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Apache Spark</rdfs:label>
+    <iwda:ontologyNodeId>107</iwda:ontologyNodeId>
+    <ns1:is_instance_of rdf:resource="http://knova.ru/ontolis-avis#node/112"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/137"/>
+    <ns1:use_for rdf:resource="http://knova.ru/ontolis-avis#node/77"/>
+    <ns1:use_for rdf:resource="http://knova.ru/ontolis-avis#node/74"/>
+    <ns1:use_for rdf:resource="http://knova.ru/ontolis-avis#node/71"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/94">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Random Forest</rdfs:label>
+    <iwda:ontologyNodeId>94</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/95"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/127">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Financial Dataset</rdfs:label>
+    <iwda:ontologyNodeId>127</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/13"/>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/144"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/190"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/191"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/31a461275671e17ca3f8e0c9">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://link.springer.com/article/10.1186/s40537-024-01059-5</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://link.springer.com/article/10.1186/s40537-024-01059-5</iwda:finalUrl>
+    <iwda:crawlStatus>HTTP_ERROR</iwda:crawlStatus>
+    <iwda:httpStatusCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">406</iwda:httpStatusCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/105">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">SMOTE</rdfs:label>
+    <iwda:ontologyNodeId>105</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/110"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/104">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Isolation Forest</rdfs:label>
+    <iwda:ontologyNodeId>104</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/109"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/2">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Bachelor degree</rdfs:label>
+    <iwda:ontologyNodeId>2</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/31"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/36887ab9e04b8eb837eac97c">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://link.springer.com/article/10.1186/s40537-024-01048-8</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://link.springer.com/article/10.1186/s40537-024-01048-8</iwda:finalUrl>
+    <iwda:crawlStatus>HTTP_ERROR</iwda:crawlStatus>
+    <iwda:httpStatusCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">406</iwda:httpStatusCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/151">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Risk Score</rdfs:label>
+    <iwda:ontologyNodeId>151</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/159"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/d8a3d3a1628018548becb878">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://link.springer.com/article/10.1007/s10115-026-02773-7</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://link.springer.com/article/10.1007/s10115-026-02773-7</iwda:finalUrl>
+    <iwda:crawlStatus>HTTP_ERROR</iwda:crawlStatus>
+    <iwda:httpStatusCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">406</iwda:httpStatusCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/1">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">ALI MEGUIZANI</rdfs:label>
+    <iwda:ontologyNodeId>1</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/5"/>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/41"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/19"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/13"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/32"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/31"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/226"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/204">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Software Resource</rdfs:label>
+    <iwda:ontologyNodeId>204</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/144"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/87">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Task</rdfs:label>
+    <iwda:ontologyNodeId>87</iwda:ontologyNodeId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/55">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Email</rdfs:label>
+    <iwda:ontologyNodeId>55</iwda:ontologyNodeId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/158">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Machine Learning Prediction</rdfs:label>
+    <iwda:ontologyNodeId>158</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/173"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/83">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Machine Learning Pipeline</rdfs:label>
+    <iwda:ontologyNodeId>83</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/202"/>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/87"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/76"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/79"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/108"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/73">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Credit Risk Assessment</rdfs:label>
+    <iwda:ontologyNodeId>73</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/74"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/229">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Duplicate Removal</rdfs:label>
+    <iwda:ontologyNodeId>229</iwda:ontologyNodeId>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/225"/>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/227"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/14">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">FinTech Software</rdfs:label>
+    <iwda:ontologyNodeId>14</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/16"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/71">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Financial Security Task</rdfs:label>
+    <iwda:ontologyNodeId>71</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/87"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/2930f074d91d33e3d979bff7">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://link.springer.com/article/10.1186/s40537-024-00996-5</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://link.springer.com/article/10.1186/s40537-024-00996-5</iwda:finalUrl>
+    <iwda:crawlStatus>HTTP_ERROR</iwda:crawlStatus>
+    <iwda:httpStatusCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">406</iwda:httpStatusCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/189">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Methodology</rdfs:label>
+    <iwda:ontologyNodeId>189</iwda:ontologyNodeId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/225">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Data Preparation Task</rdfs:label>
+    <iwda:ontologyNodeId>225</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/87"/>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/77"/>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/83"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/183">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Data Processing Module</rdfs:label>
+    <iwda:ontologyNodeId>183</iwda:ontologyNodeId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/130">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Research Resource</rdfs:label>
+    <iwda:ontologyNodeId>130</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/144"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/13"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/15">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Software</rdfs:label>
+    <iwda:ontologyNodeId>15</iwda:ontologyNodeId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/64">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Department</rdfs:label>
+    <iwda:ontologyNodeId>64</iwda:ontologyNodeId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/108">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Random Forest Model</rdfs:label>
+    <iwda:ontologyNodeId>108</iwda:ontologyNodeId>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/113"/>
+    <ns1:is_instance_of rdf:resource="http://knova.ru/ontolis-avis#node/182"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/32">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Academic Work</rdfs:label>
+    <iwda:ontologyNodeId>32</iwda:ontologyNodeId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/33">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Thesis</rdfs:label>
+    <iwda:ontologyNodeId>33</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/32"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/19"/>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/226"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/76">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Data Preprocessing</rdfs:label>
+    <iwda:ontologyNodeId>76</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/77"/>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/225"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/iwda/document/a1d4d34baddde4cbc6f0329b">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#WebDocument"/>
+    <iwda:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.mdpi.com/2227-7390/12/12/1869</iwda:url>
+    <iwda:finalUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.mdpi.com/2227-7390/12/12/1869</iwda:finalUrl>
+    <iwda:crawlStatus>HTTP_ERROR</iwda:crawlStatus>
+    <iwda:httpStatusCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">403</iwda:httpStatusCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/109">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Anomaly Detection Algorithm</rdfs:label>
+    <iwda:ontologyNodeId>109</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/119"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/82">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Financial Fraud Detection Workflow</rdfs:label>
+    <iwda:ontologyNodeId>82</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/202"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/57">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">shagrata@mail.ru</rdfs:label>
+    <iwda:ontologyNodeId>57</iwda:ontologyNodeId>
+    <ns1:is_instance_of rdf:resource="http://knova.ru/ontolis-avis#node/55"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/129">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Scientific Article</rdfs:label>
+    <iwda:ontologyNodeId>129</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/130"/>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/189"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/11">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Research Dataset</rdfs:label>
+    <iwda:ontologyNodeId>11</iwda:ontologyNodeId>
+    <ns1:is_instance_of rdf:resource="http://knova.ru/ontolis-avis#node/13"/>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/13"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/173">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Result</rdfs:label>
+    <iwda:ontologyNodeId>173</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/144"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/202">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Workflow</rdfs:label>
+    <iwda:ontologyNodeId>202</iwda:ontologyNodeId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/227">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Data Cleaning</rdfs:label>
+    <iwda:ontologyNodeId>227</iwda:ontologyNodeId>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/225"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/110">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Oversampling Method</rdfs:label>
+    <iwda:ontologyNodeId>110</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/119"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/220">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Financial Security</rdfs:label>
+    <iwda:ontologyNodeId>220</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/87"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/217">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Big Data</rdfs:label>
+    <iwda:ontologyNodeId>217</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/208"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/5">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Student</rdfs:label>
+    <iwda:ontologyNodeId>5</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/41"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/191">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Target Variable</rdfs:label>
+    <iwda:ontologyNodeId>191</iwda:ontologyNodeId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/212">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Financial Risk Assessment Module</rdfs:label>
+    <iwda:ontologyNodeId>212</iwda:ontologyNodeId>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/19"/>
+    <ns1:a_part_of rdf:resource="http://knova.ru/ontolis-avis#node/224"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/119">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Method</rdfs:label>
+    <iwda:ontologyNodeId>119</iwda:ontologyNodeId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/60">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">University of Lomé</rdfs:label>
+    <iwda:ontologyNodeId>60</iwda:ontologyNodeId>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/2"/>
+    <ns1:is_instance_of rdf:resource="http://knova.ru/ontolis-avis#node/62"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/219">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Financial Risk</rdfs:label>
+    <iwda:ontologyNodeId>219</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/144"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/144">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Resource</rdfs:label>
+    <iwda:ontologyNodeId>144</iwda:ontologyNodeId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/153">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Recall Metrics</rdfs:label>
+    <iwda:ontologyNodeId>153</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/160"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/41">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Person</rdfs:label>
+    <iwda:ontologyNodeId>41</iwda:ontologyNodeId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/62">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">University</rdfs:label>
+    <iwda:ontologyNodeId>62</iwda:ontologyNodeId>
+    <ns1:has rdf:resource="http://knova.ru/ontolis-avis#node/64"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://knova.ru/ontolis-avis#node/111">
+    <rdf:type rdf:resource="https://w3id.org/iwda/vocabulary#OntologyConcept"/>
+    <rdfs:label xml:lang="en">Model Explainability Method</rdfs:label>
+    <iwda:ontologyNodeId>111</iwda:ontologyNodeId>
+    <ns1:is_a rdf:resource="http://knova.ru/ontolis-avis#node/119"/>
+  </rdf:Description>
+</rdf:RDF>
