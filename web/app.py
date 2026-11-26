@@ -1,23 +1,74 @@
 from pathlib import Path
 import json
+import sqlite3
 import os
 import sys
 import subprocess
 import threading
 import html
-from datetime import datetime
+import secrets
+from functools import wraps
+from datetime import datetime, timedelta
 from collections import Counter
-from flask import Flask, request, abort, render_template_string, redirect
+from flask import Flask, request, abort, render_template_string, redirect, session, url_for
 
 HERE = Path(__file__).resolve().parent
 PROJECT = HERE.parent
 OUT = PROJECT / "data" / "output"
 ONTOLOGY = PROJECT / "data" / "ontology" / "ali_knowledge_graph_reorganized_v2.ont"
 URLS = PROJECT / "data" / "input" / "urls.txt"
+FEEDBACK_DB = OUT / "professor_feedback.sqlite3"
 app = Flask(__name__)
+# Set IWDA_SECRET_KEY in the hosting provider's environment variables. The
+# random fallback is suitable only for local testing and invalidates sessions
+# whenever the process restarts.
+app.secret_key = os.environ.get("IWDA_SECRET_KEY") or secrets.token_hex(32)
+app.config.update(
+    SESSION_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SAMESITE="Lax",
+    SESSION_COOKIE_SECURE=bool(os.environ.get("RENDER")),
+    PERMANENT_SESSION_LIFETIME=timedelta(hours=8),
+)
+ADMIN_PASSWORD = os.environ.get("IWDA_ADMIN_PASSWORD", "")
+AUTH_CONFIGURED = bool(ADMIN_PASSWORD)
 
-# Execution is deliberately disabled by default. Enable it only for local use.
+# Execution is deliberately disabled by default, including on Render.
 EXECUTION_ENABLED = os.environ.get("IWDA_ENABLE_EXECUTION", "0") == "1"
+
+
+def init_feedback_db():
+    OUT.mkdir(parents=True, exist_ok=True)
+    with sqlite3.connect(FEEDBACK_DB) as conn:
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS feedback (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                comment TEXT NOT NULL,
+                created_at TEXT NOT NULL
+            )
+        """)
+
+
+init_feedback_db()
+
+def login_required(view):
+    @wraps(view)
+    def wrapped(*args, **kwargs):
+        if not session.get("authenticated"):
+            return redirect(url_for("login", next=request.path))
+        return view(*args, **kwargs)
+    return wrapped
+
+def csrf_token():
+    token = session.get("csrf_token")
+    if not token:
+        token = secrets.token_urlsafe(32)
+        session["csrf_token"] = token
+    return token
+
+def valid_csrf():
+    submitted = request.form.get("csrf_token", "")
+    expected = session.get("csrf_token", "")
+    return bool(submitted and expected and secrets.compare_digest(submitted, expected))
 JOB_LOCK = threading.Lock()
 JOB = {
     "running": False,
@@ -216,7 +267,9 @@ pre{background:#142238;color:#dbe5f2;padding:16px;border-radius:8px;white-space:
 <a class="{{'active' if active=='pages' else ''}}" href="/pages">▤ &nbsp; Web pages</a>
 <a class="{{'active' if active=='ontology' else ''}}" href="/ontology">◇ &nbsp; Ontology</a>
 <a class="{{'active' if active=='method' else ''}}" href="/method">ⓘ &nbsp; Methodology</a>
-<a class="{{'active' if active=='execution' else ''}}" href="/execution">▶ &nbsp; Project Execution</a></nav>
+<a class="{{'active' if active=='feedback' else ''}}" href="/feedback">✎ &nbsp; Comments</a>
+<a class="{{'active' if active=='execution' else ''}}" href="/execution">▶ &nbsp; Project Execution</a>
+{% if session.get('authenticated') %}<a class="{{'active' if active=='feedback_management' else ''}}" href="/feedback/manage">☰ &nbsp; Feedback Management</a><form method="post" action="/logout" style="margin:8px 0 0 8px"><input type="hidden" name="csrf_token" value="{{ session.get('csrf_token','') }}"><button type="submit">Sign out</button></form>{% endif %}</nav>
 <footer>LOCAL DEMONSTRATION<br>Ontology-based Web analysis</footer></aside>
 <main><header class="top"><div><div class="kicker">MASTER PROJECT</div><h1>{{ heading }}</h1></div><div class="kicker">INTELLIGENT WEB DATA ANALYSIS</div></header>
 {{ body|safe }}<p class="muted" style="border-top:1px solid #e5eaf0;padding-top:20px;font-size:11px">IWDA · Academic demonstration interface</p></main></body></html>
@@ -320,7 +373,160 @@ def method():
     return page("Methodology","method",body,d)
 
 
+@app.route("/feedback", methods=["GET", "POST"])
+def feedback():
+    message = ""
+    message_class = "ok"
+    if request.method == "POST":
+        if not valid_csrf():
+            abort(400, description="Invalid security token. Reload the feedback page.")
+        # Honeypot field: genuine visitors leave this hidden field empty.
+        if request.form.get("website", "").strip():
+            abort(400)
+        comment = request.form.get("comment", "").strip()
+        if not comment:
+            message = "Please enter your comment before submitting."
+            message_class = "error"
+        elif len(comment) > 3000:
+            message = "Your comment is too long. Maximum length is 3,000 characters."
+            message_class = "error"
+        else:
+            with sqlite3.connect(FEEDBACK_DB) as conn:
+                conn.execute(
+                    "INSERT INTO feedback (comment, created_at) VALUES (?, ?)",
+                    (comment, datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")),
+                )
+            return redirect("/feedback?submitted=1")
+
+    if request.args.get("submitted") == "1":
+        message = "Thank you. Your comment has been submitted successfully."
+        message_class = "ok"
+
+    token = html.escape(csrf_token())
+    body = f"""
+    <section class="hero">
+      <div class="kicker" style="color:#b7c8e4">ACADEMIC FEEDBACK</div>
+      <h2>Professor Comments</h2>
+      <p>Share your observations, corrections and recommendations about this research project.</p>
+    </section>
+    <section class="panel">
+      <h3>Leave a comment</h3>
+      <p class="muted">Your feedback will be saved for review by the project administrator.</p>
+      <form method="post" action="/feedback">
+        <input type="hidden" name="csrf_token" value="{token}">
+        <div style="position:absolute;left:-10000px" aria-hidden="true">
+          <label>Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label>
+        </div>
+        <label for="comment"><b>Your comment</b></label>
+        <textarea id="comment" name="comment" rows="7" maxlength="3000" required
+          placeholder="Write your comments and suggestions here..."
+          style="display:block;width:100%;box-sizing:border-box;margin:10px 0 15px;padding:12px;border:1px solid #dce3eb;border-radius:7px;font:14px Arial;resize:vertical"></textarea>
+        <small>Maximum 3,000 characters.</small><br><br>
+        <button type="submit">Submit comment</button>
+      </form>
+      <p class="{message_class}">{html.escape(message)}</p>
+    </section>
+    """
+    return page("Professor comments", "feedback", body, data())
+
+
+@app.route("/feedback/manage")
+@login_required
+def feedback_management():
+    # Only authenticated administrators can read submitted comments.
+    with sqlite3.connect(FEEDBACK_DB) as conn:
+        conn.row_factory = sqlite3.Row
+        total = conn.execute("SELECT COUNT(*) FROM feedback").fetchone()[0]
+        comments = conn.execute(
+            "SELECT id, comment, created_at FROM feedback ORDER BY id DESC LIMIT 200"
+        ).fetchall()
+
+    body = f"""
+    <section class="hero">
+      <div class="kicker" style="color:#b7c8e4">ADMINISTRATOR AREA</div>
+      <h2>Feedback Management</h2>
+      <p>Review comments submitted by visitors and your professor.</p>
+    </section>
+    <section class="cards">
+      <div class="card"><label>TOTAL COMMENTS</label><strong>{total}</strong><small>All submissions stored in the feedback database</small></div>
+      <div class="card"><label>DISPLAYED</label><strong>{len(comments)}</strong><small>Most recent submissions (maximum 200)</small></div>
+    </section>
+    <section class="panel"><h3>Submitted comments</h3>
+    """
+    if comments:
+        body += '<table><tr><th>ID</th><th>DATE (UTC)</th><th>COMMENT</th></tr>'
+        for item in comments:
+            body += (
+                '<tr>'
+                f'<td>#{int(item["id"])}</td>'
+                f'<td>{html.escape(str(item["created_at"]))}</td>'
+                f'<td style="white-space:pre-wrap;overflow-wrap:anywhere">{html.escape(str(item["comment"]))}</td>'
+                '</tr>'
+            )
+        body += '</table>'
+    else:
+        body += '<p class="muted">No comments have been submitted yet.</p>'
+    body += '</section><p><a href="/feedback">Open public comment form →</a></p>'
+    return page("Feedback Management", "feedback_management", body, data())
+
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if not AUTH_CONFIGURED:
+        return (
+            "Authentication is not configured. Set IWDA_ADMIN_PASSWORD and "
+            "IWDA_SECRET_KEY in the service environment before using this page.",
+            503,
+        )
+
+    error = ""
+    token = csrf_token()
+    if request.method == "POST":
+        if not valid_csrf():
+            abort(400, description="Invalid security token. Reload the login page.")
+        supplied = request.form.get("password", "")
+        if secrets.compare_digest(supplied, ADMIN_PASSWORD):
+            session.clear()
+            session["authenticated"] = True
+            session["csrf_token"] = secrets.token_urlsafe(32)
+            session.permanent = True
+            destination = request.args.get("next", "/execution")
+            if not destination.startswith("/") or destination.startswith("//"):
+                destination = "/execution"
+            return redirect(destination)
+        error = "Incorrect password. Please try again."
+        token = csrf_token()
+
+    return render_template_string(
+        """<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\">
+        <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">
+        <title>IWDA sign in</title><style>body{font:15px Arial;background:#f5f7fa;color:#1b2738;
+        display:grid;place-items:center;min-height:100vh;margin:0}.box{background:white;padding:30px;
+        border:1px solid #e8edf2;border-radius:12px;width:min(360px,calc(100% - 40px))}
+        input{box-sizing:border-box;width:100%;padding:12px;margin:12px 0;border:1px solid #dce3eb;
+        border-radius:7px}button{background:#4568f5;color:white;border:0;border-radius:7px;
+        padding:11px 16px;cursor:pointer}.error{color:#bd4c42}</style></head><body><div class=\"box\">
+        <h2>IWDA · Restricted access</h2><p>Sign in to access project execution controls.</p>
+        <form method=\"post\"><input type=\"hidden\" name=\"csrf_token\" value=\"{{ token }}\">
+        <label for=\"password\">Access password</label><input id=\"password\" name=\"password\"
+        type=\"password\" required autocomplete=\"current-password\">
+        <button type=\"submit\">Sign in</button></form><p class=\"error\">{{ error }}</p>
+        <p><a href=\"/\">Return to public dashboard</a></p></div></body></html>""",
+        token=token, error=error,
+    )
+
+
+@app.route("/logout", methods=["POST"])
+@login_required
+def logout():
+    if not valid_csrf():
+        abort(400, description="Invalid security token.")
+    session.clear()
+    return redirect("/")
+
+
 @app.route("/execution")
+@login_required
 def execution():
     with JOB_LOCK:
         job = dict(JOB)
@@ -351,6 +557,7 @@ def execution():
             f'<p class="muted">{html.escape(operation["description"])}</p>'
             + (f'<p class="error"><small>{html.escape(warning)}</small></p>' if warning else "")
             + f'<form method="post" action="/execution/start/{operation_id}">'
+            f'<input type="hidden" name="csrf_token" value="{html.escape(csrf_token())}">'
             f'<button type="submit" {disabled}>Run operation</button></form></div>'
         )
     body += '</div></section>'
@@ -373,7 +580,10 @@ def execution():
 
 
 @app.route("/execution/start/<operation_id>", methods=["POST"])
+@login_required
 def start_execution(operation_id):
+    if not valid_csrf():
+        abort(400, description="Invalid security token. Reload the execution page.")
     if not EXECUTION_ENABLED:
         abort(403)
     if operation_id not in OPERATIONS:
